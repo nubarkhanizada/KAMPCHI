@@ -3,7 +3,7 @@ import toast from "react-hot-toast";
 
 const BASE_URL = "http://localhost:5000/api/v1";
 const WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/weather";
-const WEATHER_API_KEY = "10d0202a68e2e62a5477f198f1d80818";
+const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
 
 const services = {
   productAPI: {
