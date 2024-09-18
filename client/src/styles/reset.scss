@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fleur+De+Leah&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* general */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+::selection {
+    background: var(--secondaryColor);
+    color: #fff;
+}
+
+body {
+    overflow-x: hidden !important;
+    font-family: var(--primaryFont);
+}
+
+.container {
+    padding: 0% 3%;
+}
+
+:root {
+    --primaryColor: #637e4c;
+    --secondaryColor: #555346;
+    --textColor: #212121;
+    --borderColor: #f2f2f2;
+    --primaryFont: 'Montserrat', sans-serif;
+    --secondaryFont: 'Caveat', cursive;
+    --specialFont: 'Fleur De Leah', cursive;
+}
+
+/* loader */
+.loaderContainer {
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* toaster */
+.toaster {
+    z-index: 66666666 !important;
+
+
+    .go2072408551 {
+        color: var(--textColor) !important;
+        border-radius: 0 !important;
+        max-width: 400px !important;
+        box-shadow: 0 2px 16px var(--textColor) !important;
+    }
+}

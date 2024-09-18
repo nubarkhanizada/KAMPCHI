@@ -1,0 +1,270 @@
+@import '../../../styles/reset.scss';
+
+.tourDetailsPage {
+    color: var(--textColor);
+
+    .tourDetails {
+
+        .tourDetailsImage {
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            min-height: 550px;
+        }
+
+        .cardAndTicketAndWeather {
+            display: flex;
+            justify-content: space-between;
+            padding: 3% 0%;
+
+            .tourDetailsCard {
+                width: 60%;
+                min-height: 550px;
+
+                .tourDetailsContent {
+                    .tourDetailsTitle {
+                        font-size: 45px;
+                        font-weight: 500;
+                    }
+
+                    .tourDetailsLocation {
+                        font-weight: 500;
+                        margin-top: 1%;
+                    }
+
+                    .tourDetailsShortDescription {
+                        margin: 1% 0%;
+                    }
+
+                    .tourDetailsSave {
+                        margin: 1% 0%;
+
+                        svg {
+                            stroke: var(--textColor);
+                            vertical-align: bottom;
+                            cursor: pointer;
+                            transition: 0.4s;
+
+                            .polygon {
+                                stroke: var(--textColor);
+                                transition: 0.4s;
+                            }
+
+                            .polygonSaved {
+                                fill: var(--textColor);
+                                transition: 0.4s;
+                            }
+
+                            &:hover {
+                                .polygon {
+                                    stroke: var(--primaryColor);
+                                }
+
+                                .polygonSaved {
+                                    color: var(--primaryColor);
+                                    fill: var(--primaryColor) !important;
+                                    stroke: var(--primaryColor) !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .stockSuccess {
+                        color: #fff;
+                        background-color: var(--primaryColor);
+                        font-size: 12px;
+                        width: 84px;
+                        padding: 4px 8px;
+                    }
+
+                    .stockError {
+                        color: var(--textColor);
+                        background-color: var(--borderColor);
+                        font-size: 12px;
+                        width: 114px;
+                        padding: 4px 8px;
+                    }
+                }
+
+                .tourDetailsAbout {
+                    border-top: 1px solid var(--borderColor);
+                    padding-top: 1%;
+
+                    .tourDetailsCategory {
+                        margin-bottom: 1%;
+
+                        a {
+                            color: var(--textColor);
+                            transition: 0.4s;
+
+                            &:hover {
+                                color: var(--primaryColor);
+                            }
+                        }
+                    }
+
+                    .descriptionDetails {
+                        position: relative;
+                        margin-top: 3%;
+
+                        summary {
+                            font-weight: 500;
+                            list-style: none;
+                            cursor: pointer;
+
+                            &::-webkit-details-marker {
+                                display: none;
+                            }
+
+                            &::before {
+                                content: '₊';
+                                position: absolute;
+                                right: 0%;
+                                top: -30px;
+                                font-size: 3em;
+                            }
+                        }
+
+                        &[open] summary::before {
+                            content: '₋';
+                            top: -29px;
+                        }
+
+                        .tourDetailsLongDescription {
+                            margin-top: 1%;
+                            font-size: 15px;
+                        }
+                    }
+
+                    .informationDetails {
+                        position: relative;
+                        margin-top: 1%;
+
+                        summary {
+                            font-weight: 500;
+                            list-style: none;
+                            cursor: pointer;
+
+                            &::-webkit-details-marker {
+                                display: none;
+                            }
+
+                            &::before {
+                                content: '₊';
+                                position: absolute;
+                                right: 0%;
+                                top: -30px;
+                                font-size: 3em;
+                            }
+                        }
+
+                        &[open] summary::before {
+                            content: '₋';
+                            top: -29px;
+                        }
+
+                        .tourDetailsAdditionalInfo {
+                            margin-top: 1%;
+                            font-size: 15px;
+
+                            span {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .ticketAndWeather {
+                width: 30%;
+
+                .tourDetailsTicket {
+                    padding: 3%;
+                    margin-bottom: 3%;
+                    z-index: 1;
+                    background-color: var(--borderColor);
+
+                    .tourDetailsTicketTitle {
+                        font-size: 25px;
+                        font-weight: 500;
+                        margin-bottom: 10%;
+                    }
+
+                    .tourDetailsStarting {
+                        margin-bottom: 3%;
+                    }
+
+                    .tourDetailsPrice {
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin-top: 10%;
+                    }
+
+                    .tourCardCart {
+                        text-align: center;
+                        border: 1px solid var(--textColor);
+                        font-weight: 500;
+                        padding: 3% 0%;
+                        margin-top: 10%;
+                        transition: 0.4s;
+
+                        &:hover {
+                            color: #fff;
+                            background-color: var(--primaryColor);
+                            border: 1px solid var(--primaryColor);
+                        }
+                    }
+                }
+
+                .weather {
+                    background-color: var(--borderColor);
+                    padding: 3%;
+                    z-index: 1;
+
+                    .weatherCard {
+                        .cityName {
+                            font-size: 25px;
+                            font-weight: 500;
+                            margin-bottom: 10%;
+                        }
+
+                        .weatherContent {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+
+                            p {
+                                margin-bottom: 3%;
+                            }
+
+                            .weatherLeft {
+                                border-right: 1px solid var(--textColor);
+                                padding-right: 11%;
+
+                                .temperature {
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 25px;
+                                    font-weight: 500;
+                                    margin-bottom: 13%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 615px;
+            background-color: var(--textColor);
+            opacity: 0.6;
+        }
+    }
+}

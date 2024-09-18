@@ -1,0 +1,105 @@
+@import '../../../styles/reset.scss';
+
+.productCategoryPage {
+    .allCategoriesSection {}
+
+    .aboutProductCategorySection {
+        background-image: url(https://www.jack-wolfskin.com/on/demandware.static/-/Sites/default/dw1f073cc6/images/OV_pages/24CW07_Equipment_OV/01_Hero/header_XL-L.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 12% 0% 4% 0%;
+        position: relative;
+
+        .aboutProductCategoryContent {
+            margin-top: 7%;
+
+            h1 {
+                position: relative;
+                color: #fff;
+                font-size: 60px;
+                font-weight: 500;
+                margin-top: 2%;
+                z-index: 1;
+            }
+
+            a,
+            span {
+                position: relative;
+                color: #fff;
+                font-size: 15px;
+                font-weight: 500;
+                z-index: 1;
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 468px;
+            background-color: var(--textColor);
+            opacity: 0.6;
+        }
+    }
+
+    .searchAndFilterSection {
+
+        .searchAndFilterContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1% 0%;
+            border-bottom: 1px solid var(--textColor);
+
+            h1 {
+                width: 16%;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 8px 0px 8px 0px;
+            }
+
+            .productCategoryFilter {
+                width: 16%;
+            }
+        }
+    }
+
+    .filteredProductsSection {
+        .filteredProductsContainer {
+            padding: 3% 0%;
+            // border-top: 2px solid var(--borderColor);
+
+            .filteredProductsCardContainer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-bottom: 2%;
+            }
+
+            .loadMore {
+                text-align: center;
+                margin-bottom: 1%;
+                cursor: pointer;
+
+                span {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: var(--textColor);
+                    border: 1px solid var(--textColor);
+                    text-decoration: none;
+                    padding: 1% 3%;
+                    width: 200px;
+                    transition: 0.4s ease;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: var(--primaryColor);
+                        border: 1px solid var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+}

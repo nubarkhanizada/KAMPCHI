@@ -1,0 +1,190 @@
+@import '../../../styles/reset.scss';
+
+.tourCard {
+    position: relative;
+    color: var(--textColor);
+    width: 100%;
+    height: 505px;
+    padding: 1%;
+    margin-bottom: 2%;
+    overflow: hidden;
+    transition: 0.4s;
+
+    .tourCardImg {
+
+        img {
+            width: 100%;
+            height: 300px;
+            vertical-align: bottom;
+            transition: 0.4s;
+        }
+    }
+
+    .content {
+        background-color: var(--borderColor);
+        padding: 1%;
+        transition: 0.4s;
+
+        .tourCardContent {
+            text-align: start;
+            margin-bottom: 2%;
+            border-bottom: 1px solid var(--textColor);
+
+            .categoryLocation {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: var(--textColor);
+                font-size: 15px;
+                font-weight: 500;
+                margin-bottom: 5%;
+
+                // .tourCardCategory {}
+
+                // .tourCardLocation {}
+
+            }
+
+            .tourCardTitle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: var(--textColor);
+                font-size: 20px;
+                font-weight: 500;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 1%;
+
+                svg {
+                    font-size: 30px;
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    .polygon {
+                        stroke: var(--textColor);
+                        transition: 0.4s;
+                    }
+
+                    .polygonSaved {
+                        fill: var(--textColor);
+                        transition: 0.4s;
+                    }
+
+                    &:hover {
+                        .polygon {
+                            stroke: var(--primaryColor);
+                        }
+
+                        .polygonSaved {
+                            color: var(--primaryColor);
+                            fill: var(--primaryColor) !important;
+                            stroke: var(--primaryColor) !important;
+                        }
+                    }
+                }
+            }
+
+            .tourCardShortDescription {
+                color: var(--textColor);
+                font-size: 15px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: 2%;
+            }
+        }
+
+        .tourCardTime {
+            height: 44px;
+            margin-bottom: 2%;
+
+            .tourCardStarting {
+                margin-bottom: 1%;
+            }
+
+            // .tourCardEnding {}
+        }
+
+        .tourCardPriceCart {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .tourCardPrice {
+                color: var(--textColor);
+                font-weight: 500;
+            }
+
+            .tourCardCart {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                color: var(--textColor);
+                width: 40%;
+                transition: 0.4s;
+
+                svg {
+                    font-size: 26px;
+                    margin-right: 3%;
+                }
+
+                p {
+                    font-weight: 500;
+                }
+
+                &:hover {
+                    color: var(--primaryColor);
+                }
+
+            }
+        }
+
+        .tourCardEditDeleteIcon {
+            color: var(--textColor);
+            display: none;
+
+            svg {
+                position: absolute;
+                bottom: 24%;
+                right: 10%;
+                cursor: pointer;
+                transition: 0.4s;
+
+                &:hover {
+                    color: var(--primaryColor);
+                    fill: var(--primaryColor);
+                }
+            }
+
+            .edit {
+                right: 18%;
+                bottom: 24%;
+                color: #edb142;
+                font-size: 31px;
+            }
+
+            .trash {
+                color: #b80000;
+                font-size: 31px;
+            }
+
+            &.showForOwner {
+                display: block;
+            }
+        }
+    }
+
+    &:hover {
+
+        img {
+            opacity: 0.8;
+        }
+
+        .content {
+            background-color: #fff;
+        }
+
+    }
+}

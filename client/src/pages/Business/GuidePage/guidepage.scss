@@ -1,0 +1,31 @@
+@import '../../../styles/reset.scss';
+
+.guidePage {
+    align-items: flex-start;
+
+    .productsSection {
+        min-height: 1180px;
+        max-height: 1482px;
+    }
+
+    .tourCard {
+        width: 49%;
+        padding: 0%;
+
+        .tourCardCart {
+            display: none !important;
+        }
+
+        .showForOwner {
+            svg {
+                bottom: 3%;
+                right: 1%;
+            }
+
+            .edit {
+                right: 14%;
+                bottom: 3%;
+            }
+        }
+    }
+}

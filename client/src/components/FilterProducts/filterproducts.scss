@@ -1,0 +1,98 @@
+@import '../../styles/reset.scss';
+
+.reactSelectContainer {
+    border: none;
+    outline: none;
+
+    .reactSelect__control {
+        background-color: #fff;
+        font-size: 15px;
+        border: none;
+        border-radius: 0%;
+        outline: none !important;
+        box-shadow: none !important;
+        min-height: 0px;
+        height: 35px;
+        padding: 0% !important;
+
+        &:hover {
+            border-color: #fff;
+        }
+
+        // &:focus-within {
+        //     border: 1px solid transparent;
+        //     box-shadow: 0 0 5px var(--primaryColor) !important;
+
+        //     .reactSelect__dropdown-indicator {
+        //         color: var(--primaryColor);
+        //     }
+
+        //     .reactSelect__single-value {
+        //         color: var(--primaryColor);
+        //     }
+        // }
+
+        // &.no-hover:hover {
+        //     border-color: hsl(0, 0%, 70%);
+        // }
+    }
+
+    // .reactSelect__control.no-hover {
+    //     &:hover {
+    //         border-color: var(--primaryColor);
+    //     }
+    // }
+
+    .reactSelect__menu {
+        border: none;
+        border-radius: 0;
+        background-color: #fff;
+    }
+
+    .reactSelect__option {
+        padding: 10px;
+        font-size: 15px;
+        color: var(--textColor);
+        background-color: #fff;
+        transition: 0.4s;
+
+        &:hover {
+            background-color: #fff;
+            color: var(--primaryColor);
+        }
+
+        &--is-selected {
+            background-color: #fff;
+            color: var(--primaryColor);
+        }
+    }
+
+    .reactSelect__value-container {
+        padding: 8px 0px 8px 0px;
+    }
+
+    .reactSelect__placeholder {
+        color: var(--textColor);
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .reactSelect__single-value {
+        color: var(--textColor);
+        background-color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .reactSelect__indicators {
+        .reactSelect__indicator-separator {
+            background: none;
+        }
+
+        .reactSelect__dropdown-indicator {
+            color: var(--textColor);
+        }
+    }
+}

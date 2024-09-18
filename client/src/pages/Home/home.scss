@@ -1,0 +1,150 @@
+@import '../../styles/reset.scss';
+
+.homePage {
+    .gearsAndToursSection {
+        position: relative;
+        color: var(--textColor);
+        background-color: var(--borderColor);
+
+
+        .gearsAndTours {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 3%;
+
+            .attention {
+                width: 45%;
+
+                h1 {
+                    padding-top: 4%;
+                    font-size: 60px;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-weight: 400;
+                    margin: 2% 8% 0% 0%;
+                }
+            }
+
+            .imagesContainer {
+                width: 55%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+
+                img {
+                    vertical-align: bottom;
+                    transition: 0.4s;
+
+                    &:nth-child(2) {
+                        margin: 0% 0% 10% 6%;
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+
+        .checkLest {
+            position: absolute;
+            top: 46%;
+            left: 14%;
+            background-color: #fff;
+            width: 41%;
+            padding: 3%;
+
+            p {
+                margin-bottom: 3%;
+
+                &:nth-last-child(1) {
+                    margin-bottom: 0%;
+                }
+            }
+        }
+    }
+
+    .newArrivalsSection {
+        .newArrivalsContainer {
+            h1 {
+                font-size: 40px;
+                font-weight: 500;
+                padding: 3% 0% 0.5% 0%;
+            }
+        }
+    }
+
+    .toursNewArrivalsSection {
+        .newArrivalsContainer{
+            h1 {
+                font-size: 40px;
+                font-weight: 500;
+                padding: 3% 0% 0.5% 0%;
+            }
+        }
+    }
+
+    .instagramSection {
+        color: var(--textColor);
+        padding: 3% 0%;
+
+        .instagram {
+
+            .title {
+                font-size: 40px;
+                font-weight: 500;
+                margin-bottom: 1%;
+            }
+        }
+
+        .imageContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 7px;
+
+            .image {
+                position: relative;
+                width: 19%;
+                margin-right: 10px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 300px;
+                }
+
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: -100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 300px;
+                    color: #fff;
+                    background-color: #212121bf;
+                    transition: 0.4s;
+                    opacity: 0;
+
+                    .overlayContent {
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .overlay {
+                        left: 0;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
