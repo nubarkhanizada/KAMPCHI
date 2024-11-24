@@ -1,0 +1,24 @@
+@import '../../styles/reset.scss';
+
+.allCategoriesContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0%;
+
+    p {
+        .active {
+            color: var(--primaryColor);
+        }
+
+        a {
+            color: var(--textColor);
+            font-size: 10px;
+            font-weight: 600;
+            transition: 0.4s;
+
+            &:hover {
+                color: var(--primaryColor);
+            }
+        }
+    }
+}

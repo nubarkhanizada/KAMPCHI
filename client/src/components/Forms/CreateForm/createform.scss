@@ -1,0 +1,62 @@
+@import '../../../styles/reset.scss';
+
+.createForm {
+    color: var(--textColor);
+
+    .createNewProduct {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10%;
+    }
+
+    .form {
+        form {
+            .formGroup {
+                margin-bottom: 6%;
+
+
+
+                &:last-child {
+                    margin-bottom: 2%;
+                }
+
+                label {
+                    display: block;
+                    margin-bottom: 1%;
+                    font-weight: 500;
+                }
+
+                .formInput {
+                    width: 100%;
+                    padding: 2%;
+                    outline: none;
+                    border: 2px solid var(--borderColor);
+
+                    &:focus {
+                        color: var(--primaryColor);
+                        border: 2px solid transparent;
+                        box-shadow: 0 0 5px var(--primaryColor);
+                    }
+                }
+
+                .submitButton {
+                    color: var(--textColor);
+                    background-color: #fff;
+                    border: 1px solid var(--textColor);
+                    font-size: 16px;
+                    font-weight: 500;
+                    width: 100%;
+                    padding: 2% 0%;
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: var(--primaryColor);
+                        border: 1px solid var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+}

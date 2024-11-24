@@ -1,0 +1,63 @@
+@import '../../styles/reset.scss';
+
+.favoritesPage {
+    .favoritesContainer {
+        padding: 3% 0%;
+        position: relative;
+
+        h1 {
+            color: var(--textColor);
+            font-size: 25px;
+            margin-bottom: 3%;
+        }
+
+        .favoritesCardContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 3% 0%;
+
+            .emptyFavoritesPage {
+                margin: auto;
+                padding: 4% 0%;
+
+                .emptyFavoritesPageImage {
+                    width: 250px;
+                    height: 248px;
+                    margin: auto;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                p {
+                    color: var(--textColor);
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    margin: 3% 0%;
+                }
+
+                a {
+                    color: var(--textColor);
+                    font-weight: 600;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    transition: 0.4s;
+
+                    svg {
+                        margin-right: 1%;
+                    }
+
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+}
