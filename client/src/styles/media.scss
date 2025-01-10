@@ -1,0 +1,4881 @@
+// phone
+@media (max-width: 576px) {
+
+    // reset
+    .container {
+        padding: 0% 2% !important;
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .slick-prev {
+        display: none !important;
+    }
+
+    .slick-next {
+        display: none !important;
+    }
+
+    // header
+    header {
+        .headerAll {
+            justify-content: space-between !important;
+
+            .linkNav {
+                font-size: 12px !important;
+            }
+
+            .headerLeft {
+                width: 18% !important;
+
+                .logo {
+                    svg {
+                        width: 87px !important;
+                        height: 18px !important;
+                    }
+                }
+            }
+
+            nav {
+                width: 58% !important;
+
+                .navItem {
+
+                    svg {
+                        display: none !important;
+                    }
+
+
+                    .linkNav {
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+
+                    &.navDropdown {
+
+                        .navDropdownMenu {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+
+            .headerRight {
+                width: 13% !important;
+
+                .linkSignup {
+                    font-size: 8px !important;
+                    min-width: 76px !important;
+                    margin-right: 163% !important;
+                    margin-bottom: 80% !important;
+
+                    &:hover {
+                        color: var(--textColor) !important;
+                    }
+                }
+
+                .linkSave {
+                    svg {
+                        width: 18px !important;
+                        height: 19px !important;
+                    }
+                }
+
+                .linkUser,
+                .linkFav,
+                .linkSave,
+                .linkCart {
+
+                    svg {
+                        font-size: 20px !important;
+                    }
+
+                    &:hover svg {
+                        color: var(--textColor) !important;
+                    }
+
+                    &:hover .favLength,
+                    &:hover .saveLength,
+                    &:hover .cartLength {
+                        background-color: var(--textColor) !important;
+                    }
+                }
+
+                .favLength,
+                .saveLength,
+                .cartLength {
+                    font-size: 8px !important;
+                    padding: 0px 2px !important;
+                }
+
+                .saveLength {
+                    top: -1px !important;
+                }
+
+            }
+        }
+    }
+
+    // home
+    .homePage {
+        .sliderContainer {
+            max-height: 298px !important;
+
+            .sliderAbout {
+                height: 298px !important;
+
+                .sliderAboutTextContainer {
+
+                    .sliderAboutTitle {
+                        h6 {
+                            font-size: 25px !important;
+                        }
+                    }
+
+                    .sliderAboutText {
+                        p {
+                            font-size: 13px !important;
+                        }
+                    }
+
+                    .sliderAboutButton {
+
+                        a {
+                            font-size: 10px !important;
+                            width: 105px !important;
+
+                            &:hover {
+                                background-color: var(--primaryColor) !important;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .sliderTours {
+                height: 298px !important;
+
+                .sliderToursTextContainer {
+
+                    .sliderToursTitle {
+                        h6 {
+                            font-size: 25px !important;
+                        }
+                    }
+
+                    .sliderToursText {
+                        p {
+                            font-size: 13px !important;
+                        }
+                    }
+
+                    .sliderToursButton {
+
+                        a {
+                            font-size: 10px !important;
+                            width: 105px !important;
+
+                            &:hover {
+                                background-color: var(--primaryColor) !important;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .sliderProducts {
+                height: 298px !important;
+
+                .sliderProductsTextContainer {
+
+                    .sliderProductsTitle {
+                        h6 {
+                            font-size: 25px !important;
+                        }
+                    }
+
+                    .sliderProductsText {
+                        p {
+                            font-size: 13px !important;
+                        }
+                    }
+
+                    .sliderProductsButton {
+
+                        a {
+                            font-size: 10px !important;
+                            width: 105px !important;
+
+                            &:hover {
+                                background-color: var(--primaryColor) !important;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .overlay {
+                height: 298px !important;
+            }
+
+        }
+
+        .gearsAndToursSection {
+
+            .gearsAndTours {
+
+                .attention {
+
+                    h1 {
+                        font-size: 20px !important;
+                    }
+
+                    p {
+                        font-size: 13px !important;
+                        margin-bottom: 11% !important;
+                    }
+                }
+
+                .imagesContainer {
+
+                    img {
+                        height: 150px !important;
+                    }
+                }
+            }
+
+            .checkLest {
+                display: none !important;
+            }
+        }
+
+        .newArrivalsSection {
+            .newArrivalsContainer {
+                h1 {
+                    font-size: 20px !important;
+                    padding: 4% 0% 0.5% 0% !important;
+                }
+
+                .productCard {
+                    width: 100% !important;
+                    margin: 0% !important;
+
+                    .productCardPriceCart {
+
+                        .productCardCart {
+                            border: 1px solid var(--textColor) !important;
+                            width: 50% !important;
+
+                            p {
+                                font-size: 12px !important;
+                                opacity: 1 !important;
+                                visibility: visible !important;
+                            }
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                                background-color: transparent !important;
+
+                                svg {
+                                    color: var(--textColor) !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .productCardFavoriteIcon {
+                        right: 8% !important;
+
+                        &:hover {
+                            svg {
+                                color: var(--textColor) !important;
+                                fill: var(--textColor) !important;
+                            }
+                        }
+                    }
+
+                    .productCardEditDeleteIcon {
+
+                        .trash {
+                            right: 53% !important;
+                            bottom: 6% !important;
+                            font-size: 27px !important;
+
+                            &:hover {
+                                color: #b80000 !important;
+                                fill: #b80000 !important;
+                            }
+                        }
+
+                        .edit {
+                            right: 62% !important;
+                            bottom: 6% !important;
+
+                            &:hover {
+                                color: #edb142 !important;
+                                fill: #edb142 !important;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        border: 1px solid var(--borderColor) !important;
+                        box-shadow: none !important;
+
+                        .productCardCart {
+                            color: var(--textColor) !important;
+                            border: 1px solid var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .toursNewArrivalsSection {
+            .newArrivalsContainer {
+                h1 {
+                    font-size: 20px !important;
+                    padding: 1% 0% 2% 0% !important;
+                }
+
+                .tourCard {
+                    width: 100% !important;
+                    border: none !important;
+                    padding: 0% !important;
+                    margin: 0% !important;
+
+                    .content {
+
+                        .tourCardContent {
+
+                            .tourCardTitle {
+
+                                svg {
+
+                                    &:hover {
+                                        .polygon {
+                                            stroke: var(--textColor) !important;
+                                        }
+
+                                        .polygonSaved {
+                                            color: var(--textColor) !important;
+                                            fill: var(--textColor) !important;
+                                            stroke: var(--textColor) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .tourCardPriceCart {
+
+                            .tourCardCart {
+                                width: 42% !important;
+
+                                &:hover {
+                                    color: var(--textColor) !important;
+                                }
+
+                            }
+                        }
+
+                        .tourCardEditDeleteIcon {
+
+                            .edit {
+                                bottom: 26% !important;
+
+                                &:hover {
+                                    color: #edb142 !important;
+                                    fill: #edb142 !important;
+                                }
+                            }
+
+                            .trash {
+                                bottom: 26% !important;
+
+                                &:hover {
+                                    color: #b80000 !important;
+                                    fill: #b80000 !important;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+
+                        img {
+                            opacity: 1 !important;
+                        }
+
+                        .content {
+                            background-color: var(--borderColor) !important;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .instagramSection {
+
+            .instagram {
+
+                .title {
+                    font-size: 20px !important;
+                    margin-bottom: 5% !important;
+                }
+            }
+
+            .imageContainer {
+
+                .image {
+                    width: 18% !important;
+
+                    &:nth-child(3) {
+                        width: 35% !important;
+                    }
+
+                    &:nth-child(6) {
+                        width: 35% !important;
+                    }
+
+                    &:nth-child(4) {
+                        margin-right: 0% !important;
+                    }
+
+                    &:nth-child(8) {
+                        margin-right: 0% !important;
+                    }
+
+                    img {
+                        height: 80px !important;
+                    }
+
+                    .overlay {
+                        height: 80px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    // products
+    .productPage {
+        .allCategoriesSection {
+            .allCategoriesContainer {
+                align-items: center !important;
+                flex-wrap: wrap !important;
+
+                p {
+                    a {
+                        font-size: 8px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .aboutProductsSection {
+            .aboutProductsContent {
+                width: 66% !important;
+
+                h2 {
+                    font-size: 11px !important;
+                }
+
+                h4 {
+                    font-size: 11px !important;
+                }
+
+                h6 {
+                    font-size: 10px !important;
+                }
+            }
+
+            .overlay {
+                height: 197px !important;
+            }
+
+        }
+
+        .popularCategoriesSection {
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .category {
+                p {
+                    font-size: 12px !important;
+                }
+            }
+        }
+
+        .popularSellersSection {
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .popularSellersLogoContainer {
+                flex-wrap: wrap !important;
+
+                .popularSellersLogo {
+                    margin-bottom: 3% !important;
+
+                    svg {
+                        fill: var(--textColor) !important;
+                        width: 120px !important;
+                    }
+
+                    &:hover {
+                        background-color: var(--borderColor) !important;
+                    }
+                }
+
+                .popularSellersLogo.yonja {
+                    font-size: 18px !important;
+
+                    svg {
+                        width: 23px !important;
+                    }
+                }
+            }
+
+
+        }
+
+        .newArrivalsSection {
+            .newArrivalsContainer {
+                h1 {
+                    font-size: 20px !important;
+                }
+
+                .productCard {
+                    width: 100% !important;
+                    margin: 0% !important;
+
+                    .productCardPriceCart {
+
+                        .productCardCart {
+                            border: 1px solid var(--textColor) !important;
+                            width: 50% !important;
+
+                            p {
+                                font-size: 12px !important;
+                                opacity: 1 !important;
+                                visibility: visible !important;
+                            }
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                                background-color: transparent !important;
+
+                                svg {
+                                    color: var(--textColor) !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .productCardFavoriteIcon {
+                        right: 8% !important;
+
+                        &:hover {
+                            svg {
+                                color: var(--textColor) !important;
+                                fill: var(--textColor) !important;
+                            }
+                        }
+                    }
+
+                    .productCardEditDeleteIcon {
+
+                        .trash {
+                            right: 53% !important;
+                            bottom: 6% !important;
+                            font-size: 27px !important;
+
+                            &:hover {
+                                color: #b80000 !important;
+                                fill: #b80000 !important;
+                            }
+                        }
+
+                        .edit {
+                            right: 62% !important;
+                            bottom: 6% !important;
+
+                            &:hover {
+                                color: #edb142 !important;
+                                fill: #edb142 !important;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        border: 1px solid var(--borderColor) !important;
+                        box-shadow: none !important;
+
+                        .productCardCart {
+                            color: var(--textColor) !important;
+                            border: 1px solid var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .shoppingFeaturesSection {
+
+            .shoppingFeaturesContainer {
+                flex-direction: column !important;
+
+                .shoppingFeatures {
+                    width: 100% !important;
+                    margin-bottom: 4% !important;
+
+                    &:nth-last-child(1) {
+                        margin-bottom: 0% !important;
+                    }
+
+                    .featuresIcon {
+                        svg {
+                            width: 60px !important;
+
+                            &:nth-child(1) {
+                                height: 43px !important;
+                            }
+                        }
+                    }
+
+                    .flexiblePayment {
+                        svg {
+                            height: 50px !important;
+                        }
+                    }
+
+                    .featuresContent {
+                        width: 100% !important;
+                        margin-left: 18% !important;
+
+                        h4 {
+                            font-size: 20px !important;
+                            margin-bottom: 1% !important;
+                        }
+
+                        p {
+                            font-size: 16px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // products category
+    .productCategoryPage {
+        .allCategoriesSection {
+            .allCategoriesContainer {
+                align-items: center !important;
+                flex-wrap: wrap !important;
+
+                p {
+                    a {
+                        font-size: 8px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .aboutProductCategorySection {
+
+            .aboutProductCategoryContent {
+
+                h1 {
+                    font-size: 20px !important;
+                }
+
+                a,
+                span {
+                    font-size: 10px !important;
+                }
+            }
+
+            .overlay {
+                height: 151px !important;
+            }
+        }
+
+        .searchAndFilterSection {
+
+            .searchAndFilterContainer {
+
+                h1 {
+                    width: 21% !important;
+                    font-size: 9px !important;
+                }
+
+                .productCategorySearch {
+                    width: 32% !important;
+
+                    input {
+                        font-size: 9px !important;
+                        padding-right: 18% !important;
+                    }
+
+                    button {
+
+                        svg {
+                            font-size: 20px !important;
+                        }
+                    }
+
+                    .productCategorySearchItems {
+                        width: 377px !important;
+                        height: 277px !important;
+
+                        &::-webkit-scrollbar-thumb {
+
+                            &:hover {
+                                background: var(--primaryColor) !important;
+                            }
+                        }
+
+                        .searchResults {
+                            margin: 3%;
+
+                            .searchResultsItem {
+                                display: flex;
+                                align-items: center;
+
+                                .searchResultImage {
+                                    background-color: #fff;
+                                    width: 20%;
+                                    margin-right: 3%;
+
+                                    img {
+                                        width: 100%;
+                                        vertical-align: bottom;
+                                    }
+                                }
+
+                                .searchImageContent {
+                                    p {
+                                        font-size: 9px !important;
+
+                                        &:nth-child(1) {
+                                            width: 277px !important;
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    p {
+                                        color: var(--textColor) !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.emptySearchItems {
+                            font-size: 9px !important;
+                            height: 37px !important;
+                        }
+                    }
+                }
+
+                .productCategoryFilter {
+                    width: 21% !important;
+
+                    .reactSelectContainer {
+
+                        .reactSelect__control {
+                            background-color: #fff;
+                            font-size: 9px !important;
+                        }
+
+                        .reactSelect__option {
+                            font-size: 9px !important;
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                            }
+                        }
+
+                        .reactSelect__placeholder {
+                            font-size: 9px !important;
+                        }
+
+                        .reactSelect__single-value {
+                            font-size: 9px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .filteredProductsSection {
+            .filteredProductsContainer {
+
+                .filteredProductsCardContainer {
+
+                    .productCard {
+                        width: 100% !important;
+                        margin: 0% !important;
+                        margin-bottom: 5% !important;
+
+                        &:nth-last-child(1) {
+                            margin-bottom: 0% !important;
+                        }
+
+                        .productCardPriceCart {
+
+                            .productCardCart {
+                                border: 1px solid var(--textColor) !important;
+                                width: 50% !important;
+
+                                p {
+                                    font-size: 12px !important;
+                                    opacity: 1 !important;
+                                    visibility: visible !important;
+                                }
+
+                                &:hover {
+                                    color: var(--textColor) !important;
+                                    background-color: transparent !important;
+
+                                    svg {
+                                        color: var(--textColor) !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        .productCardFavoriteIcon {
+                            right: 8% !important;
+
+                            &:hover {
+                                svg {
+                                    color: var(--textColor) !important;
+                                    fill: var(--textColor) !important;
+                                }
+                            }
+                        }
+
+                        .productCardEditDeleteIcon {
+
+                            .trash {
+                                right: 53% !important;
+                                bottom: 6% !important;
+                                font-size: 27px !important;
+
+                                &:hover {
+                                    color: #b80000 !important;
+                                    fill: #b80000 !important;
+                                }
+                            }
+
+                            .edit {
+                                right: 62% !important;
+                                bottom: 6% !important;
+
+                                &:hover {
+                                    color: #edb142 !important;
+                                    fill: #edb142 !important;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            border: 1px solid var(--borderColor) !important;
+                            box-shadow: none !important;
+
+                            .productCardCart {
+                                color: var(--textColor) !important;
+                                border: 1px solid var(--textColor) !important;
+                            }
+                        }
+                    }
+                }
+
+                .loadMore {
+                    margin: 3% 0% 1% 0% !important;
+
+                    span {
+                        font-size: 10px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                            background-color: transparent !important;
+                            border: 1px solid var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // product details
+    .productDetailsCard {
+        display: block !important;
+
+        .productDetailsCardImg {
+            width: 100% !important;
+        }
+
+        .productDetailsContentAndAbout {
+            width: 100% !important;
+
+            .productDetailsContent {
+
+                .productDetailsTitle {
+                    font-size: 13px !important;
+                    font-weight: 500 !important;
+                }
+
+                .productDetailsPrice {
+                    font-size: 13px !important;
+                }
+
+                .productDetailsShortDescription {
+                    font-size: 10px !important;
+                }
+
+                .productDetailsFavoriteAndCart {
+
+                    .productDetailsFavorite {
+
+                        svg {
+                            font-size: 25px !important;
+                        }
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+
+                    .productDetailsCart {
+                        font-size: 13px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                            background-color: transparent !important;
+                            border: 1px solid var(--textColor) !important;
+
+                        }
+                    }
+
+                    .productDetailsRent {
+                        font-size: 13px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                            background-color: transparent !important;
+                            border: 1px solid var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+
+            .productDetailsAbout {
+
+                .productDetailsCode {
+                    font-size: 13px !important;
+
+                    span {
+                        width: 55% !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+
+                        p {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+
+                .productDetailsCategory {
+                    font-size: 13px !important;
+
+                    .category {
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+
+                .productDetailsSeller {
+                    font-size: 13px !important;
+                }
+
+                .descriptionDetails {
+
+                    summary {
+                        font-size: 13px !important;
+
+                        &::before {
+                            top: -23px !important;
+                        }
+                    }
+
+                    &[open] summary::before {
+                        top: -22px !important;
+                    }
+
+                    .productDetailsLongDescription {
+                        font-size: 10px !important;
+                    }
+                }
+
+                .informationDetails {
+
+                    summary {
+                        font-size: 13px !important;
+
+                        &::before {
+                            top: -23px !important;
+                        }
+                    }
+
+                    &[open] summary::before {
+                        top: -22px !important;
+                    }
+
+                    .productDetailsAdditionalInfo {
+                        font-size: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    // tours
+    .tourPage {
+        .allCategoriesSection {
+            .allCategoriesContainer {
+                align-items: center !important;
+                flex-wrap: wrap !important;
+
+                p {
+                    a {
+                        font-size: 8px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .aboutProductsSection {
+
+            .aboutProductsContent {
+                width: 77% !important;
+                margin-left: 0% !important;
+
+                h2 {
+                    font-size: 11px !important;
+                }
+
+                h4 {
+                    font-size: 11px !important;
+                }
+
+                h6 {
+                    font-size: 10px !important;
+                    padding-right: 12% !important;
+                }
+            }
+
+            .overlay {
+                height: 197px !important;
+            }
+
+        }
+
+        .toursPopularCategoriesSection {
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .toursCategorySlider {
+
+                .slick-track,
+                .slick-list {
+                    height: 400px !important;
+                }
+
+                .category {
+                    border: none !important;
+
+                    .categoryImg {
+                        min-width: 300px !important;
+                        max-width: 515px !important;
+
+                        img {
+                            width: 100% !important;
+                        }
+
+                        p {
+                            background-color: var(--primaryColor) !important;
+                            font-size: 35px !important;
+                            opacity: 0.8 !important;
+                        }
+
+                        &:hover {
+
+                            img {
+                                opacity: 1 !important;
+                            }
+
+                            p {
+                                opacity: 1 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .popularSellersSection {
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .popularSellersLogoContainer {
+                flex-wrap: wrap !important;
+
+                .popularSellersLogo {
+                    margin-bottom: 3% !important;
+
+                    svg {
+                        fill: var(--textColor) !important;
+                        width: 120px !important;
+                    }
+
+                    &:hover {
+                        background-color: var(--borderColor) !important;
+                    }
+                }
+            }
+
+
+        }
+
+        .toursNewArrivalsSection {
+            .newArrivalsContainer {
+                h1 {
+                    font-size: 20px !important;
+                    padding: 1% 0% 2% 0% !important;
+                }
+
+                .tourCard {
+                    width: 100% !important;
+                    border: none !important;
+                    padding: 0% !important;
+                    margin: 0% !important;
+
+                    .content {
+
+                        .tourCardContent {
+
+                            .tourCardTitle {
+
+                                svg {
+
+                                    &:hover {
+                                        .polygon {
+                                            stroke: var(--textColor) !important;
+                                        }
+
+                                        .polygonSaved {
+                                            color: var(--textColor) !important;
+                                            fill: var(--textColor) !important;
+                                            stroke: var(--textColor) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .tourCardPriceCart {
+
+                            .tourCardCart {
+                                width: 42% !important;
+
+                                &:hover {
+                                    color: var(--textColor) !important;
+                                }
+
+                            }
+                        }
+
+                        .tourCardEditDeleteIcon {
+
+                            .edit {
+                                bottom: 26% !important;
+
+                                &:hover {
+                                    color: #edb142 !important;
+                                    fill: #edb142 !important;
+                                }
+                            }
+
+                            .trash {
+                                bottom: 26% !important;
+
+                                &:hover {
+                                    color: #b80000 !important;
+                                    fill: #b80000 !important;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+
+                        img {
+                            opacity: 1 !important;
+                        }
+
+                        .content {
+                            background-color: var(--borderColor) !important;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .toursShoppingFeaturesSection {
+
+            .shoppingFeaturesContainer {
+                flex-direction: column !important;
+
+                .shoppingFeatures {
+                    width: 100% !important;
+                    margin-bottom: 4% !important;
+
+                    &:nth-last-child(1) {
+                        margin-bottom: 0% !important;
+                    }
+
+                    .featuresIcon {
+                        svg {
+                            width: 60px !important;
+
+                            &:nth-child(1) {
+                                height: 43px !important;
+                            }
+                        }
+                    }
+
+                    .flexiblePayment {
+                        svg {
+                            height: 50px !important;
+                        }
+                    }
+
+                    .featuresContent {
+                        width: 100% !important;
+                        margin-left: 18% !important;
+
+                        h4 {
+                            font-size: 20px !important;
+                            margin-bottom: 1% !important;
+                        }
+
+                        p {
+                            font-size: 16px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // tours category
+    .tourCategoryPage {
+        .allTourCategoriesSection {
+            .allCategoriesContainer {
+                align-items: center !important;
+                flex-wrap: wrap !important;
+
+                p {
+                    a {
+                        font-size: 8px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .aboutTourCategorySection {
+            height: 151px !important;
+            padding: 1% 0% 0% 0% !important;
+
+            .aboutTourCategoryContent {
+                margin-top: 4% !important;
+
+                h1 {
+                    font-size: 20px !important;
+                }
+
+                a,
+                span {
+                    font-size: 10px !important;
+                }
+
+                p {
+                    font-size: 8px !important;
+                }
+            }
+
+            .overlay {
+                height: 151px !important;
+            }
+        }
+
+        .searchAndFilterSection {
+
+            .searchAndFilterContainer {
+
+                h1 {
+                    width: 21% !important;
+                    font-size: 9px !important;
+                }
+
+                .productCategorySearch {
+                    width: 32% !important;
+
+                    input {
+                        font-size: 9px !important;
+                        padding-right: 18% !important;
+                    }
+
+                    button {
+
+                        svg {
+                            font-size: 20px !important;
+                        }
+                    }
+
+                    .productCategorySearchItems {
+                        width: 377px !important;
+                        height: 277px !important;
+
+                        &::-webkit-scrollbar-thumb {
+
+                            &:hover {
+                                background: var(--primaryColor) !important;
+                            }
+                        }
+
+                        .searchResults {
+
+                            .searchResultsItem {
+
+                                .searchImageContent {
+                                    p {
+                                        font-size: 9px !important;
+
+                                        &:nth-child(1) {
+                                            width: 277px !important;
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    p {
+                                        color: var(--textColor) !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.emptySearchItems {
+                            font-size: 9px !important;
+                            height: 37px !important;
+                        }
+                    }
+                }
+
+                .tourCategoryFilter {
+                    width: 21% !important;
+
+                    .reactSelectContainer {
+
+                        .reactSelect__control {
+                            font-size: 9px !important;
+                        }
+
+                        .reactSelect__option {
+                            font-size: 9px !important;
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                            }
+                        }
+
+                        .reactSelect__placeholder {
+                            font-size: 9px !important;
+                        }
+
+                        .reactSelect__single-value {
+                            font-size: 9px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .filteredToursSection {
+            .filteredToursContainer {
+
+                .filteredToursCardContainer {
+
+                    .tourCard {
+                        width: 100% !important;
+                        border: none !important;
+                        padding: 0% !important;
+                        margin: 0% !important;
+                        margin-bottom: 5% !important;
+
+                        &:nth-last-child(1) {
+                            margin-bottom: 0% !important;
+                        }
+
+                        .content {
+
+                            .tourCardContent {
+
+                                .tourCardTitle {
+
+                                    svg {
+                                        &:hover {
+                                            .polygon {
+                                                stroke: var(--textColor) !important;
+                                            }
+
+                                            .polygonSaved {
+                                                color: var(--textColor) !important;
+                                                fill: var(--textColor) !important;
+                                                stroke: var(--textColor) !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .tourCardPriceCart {
+
+                                .tourCardCart {
+                                    width: 42% !important;
+
+                                    &:hover {
+                                        color: var(--textColor) !important;
+                                    }
+
+                                }
+                            }
+
+                            .tourCardEditDeleteIcon {
+
+                                .edit {
+                                    bottom: 26% !important;
+
+                                    &:hover {
+                                        color: #edb142 !important;
+                                        fill: #edb142 !important;
+                                    }
+                                }
+
+                                .trash {
+                                    bottom: 26% !important;
+
+                                    &:hover {
+                                        color: #b80000 !important;
+                                        fill: #b80000 !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+
+                            img {
+                                opacity: 1 !important;
+                            }
+
+                            .content {
+                                background-color: var(--borderColor) !important;
+                            }
+
+                        }
+                    }
+                }
+
+                .loadMore {
+                    margin: 3% 0% 1% 0% !important;
+
+                    span {
+                        font-size: 10px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                            background-color: transparent !important;
+                            border: 1px solid var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // tours details
+    .tourDetailsPage {
+
+        .tourDetails {
+
+            .tourDetailsImage {
+                min-height: 250px !important;
+            }
+
+            .cardAndTicketAndWeather {
+
+                .tourDetailsCard {
+                    min-height: 309px !important;
+
+                    .tourDetailsContent {
+                        .tourDetailsTitle {
+                            font-size: 16px !important;
+                            font-weight: 500 !important;
+                        }
+
+                        .tourDetailsLocation {
+                            font-size: 13px !important;
+                        }
+
+                        .tourDetailsShortDescription {
+                            font-size: 10px !important;
+                        }
+
+                        .tourDetailsSave {
+
+                            svg {
+                                width: 25px !important;
+                                height: 25px !important;
+
+                                &:hover {
+                                    .polygon {
+                                        stroke: var(--textColor) !important;
+                                    }
+
+                                    .polygonSaved {
+                                        color: var(--textColor) !important;
+                                        fill: var(--textColor) !important;
+                                        stroke: var(--textColor) !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .tourDetailsAbout {
+
+                        .tourDetailsCategory {
+                            font-size: 13px !important;
+
+                            a {
+                                &:hover {
+                                    color: var(--textColor) !important;
+                                }
+                            }
+                        }
+
+                        .tourDetailsGuide {
+                            font-size: 13px !important;
+                        }
+
+                        .descriptionDetails {
+
+                            summary {
+                                font-size: 13px !important;
+
+                                &::before {
+                                    top: -23px !important;
+                                }
+                            }
+
+                            &[open] summary::before {
+                                top: -22px !important;
+                            }
+
+                            .tourDetailsLongDescription {
+                                font-size: 10px !important;
+                            }
+                        }
+
+                        .informationDetails {
+
+                            summary {
+                                font-size: 13px !important;
+
+                                &::before {
+                                    top: -23px !important;
+                                }
+                            }
+
+                            &[open] summary::before {
+                                top: -22px !important;
+                            }
+
+                            .tourDetailsAdditionalInfo {
+                                font-size: 10px !important;
+                            }
+                        }
+                    }
+                }
+
+                .ticketAndWeather {
+                    width: 35% !important;
+
+                    .tourDetailsTicket {
+
+                        .tourDetailsTicketTitle {
+                            font-size: 13px !important;
+                        }
+
+                        .tourDetailsStarting {
+                            font-size: 10px !important;
+                        }
+
+                        .tourDetailsEnding {
+                            font-size: 10px !important;
+                        }
+
+                        .tourDetailsPrice {
+                            font-size: 10px !important;
+                        }
+
+                        .tourCardCart {
+                            font-size: 10px !important;
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                                background-color: var(--borderColor) !important;
+                                border: 1px solid var(--textColor) !important;
+                            }
+                        }
+                    }
+
+                    .weather {
+                        .weatherCard {
+                            .cityName {
+                                font-size: 13px !important;
+                            }
+
+                            .weatherContent {
+                                flex-direction: column !important;
+                                align-items: start !important;
+
+                                p {
+                                    font-size: 10px !important;
+                                }
+
+                                .weatherLeft {
+                                    border: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .overlay {
+                height: 315px !important;
+            }
+        }
+    }
+
+    // about
+    .aboutPage {
+
+        h3 {
+            font-size: 18px !important;
+        }
+
+        .slogan {
+
+            h1 {
+                font-size: 20px !important;
+            }
+        }
+
+        .about {
+
+            .aboutPart {
+
+                p {
+                    font-size: 13px !important;
+                }
+            }
+        }
+
+        .values {
+
+            .valuesContainer {
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+
+                .valueContainer {
+                    width: 55% !important;
+                    background-color: #ffffff1c !important;
+                    box-shadow: 0 0 5px #fff;
+                    margin-bottom: 5% !important;
+
+                    &:nth-last-child(1) {
+                        margin-bottom: 0% !important;
+                    }
+                }
+            }
+        }
+
+        .team {
+
+            .teamContainer {
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+
+                .member {
+                    width: 55% !important;
+                    margin-bottom: 5% !important;
+
+                    &:nth-last-child(1) {
+                        margin-bottom: 0% !important;
+                    }
+                }
+            }
+        }
+
+        .careers {
+
+            p {
+                font-size: 13px !important;
+            }
+
+            a {
+                font-size: 13px !important;
+
+                &:hover {
+                    background-color: transparent !important;
+                }
+            }
+        }
+
+        .contact {
+
+            p {
+                font-size: 13px !important;
+            }
+
+            a {
+                font-size: 13px !important;
+            }
+        }
+    }
+
+    // favorites
+    .favoritesPage {
+        .favoritesContainer {
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .favoritesCardContainer {
+
+                .productCard {
+                    width: 49% !important;
+                    margin: 0% !important;
+                    margin-bottom: 2% !important;
+
+                    .productCardTitle {
+                        font-size: 13px !important;
+                    }
+
+                    .productCardPriceCart {
+                        .productCardPrice {
+                            font-size: 13px !important;
+                        }
+
+                        .productCardCart {
+                            border: 1px solid var(--textColor) !important;
+                            width: 65% !important;
+
+                            p {
+                                font-size: 10px !important;
+                                opacity: 1 !important;
+                                visibility: visible !important;
+                            }
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                                background-color: transparent !important;
+
+                                svg {
+                                    color: var(--textColor) !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .productCardFavoriteIcon {
+                        right: 8% !important;
+
+                        &:hover {
+                            svg {
+                                color: var(--textColor) !important;
+                                fill: var(--textColor) !important;
+                            }
+                        }
+                    }
+
+                    .productCardEditDeleteIcon {
+
+                        .trash {
+                            right: 67% !important;
+                            top: 6% !important;
+                            font-size: 27px !important;
+
+                            &:hover {
+                                color: #b80000 !important;
+                                fill: #b80000 !important;
+                            }
+                        }
+
+                        .edit {
+                            right: 84% !important;
+                            top: 6% !important;
+
+                            &:hover {
+                                color: #edb142 !important;
+                                fill: #edb142 !important;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        border: 1px solid var(--borderColor) !important;
+                        box-shadow: none !important;
+
+                        .productCardCart {
+                            color: var(--textColor) !important;
+                            border: 1px solid var(--textColor) !important;
+                        }
+                    }
+                }
+
+                .emptyFavoritesPage {
+
+                    p {
+                        font-size: 8px !important;
+                    }
+
+                    a {
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // saved
+    .savedPage {
+        .savedContainer {
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .savedCardContainer {
+
+                .tourCard {
+                    width: 100% !important;
+                    border: none !important;
+                    padding: 0% !important;
+                    margin: 0% !important;
+                    margin-bottom: 5% !important;
+
+                    &:nth-last-child(1) {
+                        margin-bottom: 0% !important;
+                    }
+
+                    .content {
+
+                        .tourCardContent {
+
+                            .tourCardTitle {
+
+                                svg {
+
+                                    &:hover {
+                                        .polygon {
+                                            stroke: var(--textColor) !important;
+                                        }
+
+                                        .polygonSaved {
+                                            color: var(--textColor) !important;
+                                            fill: var(--textColor) !important;
+                                            stroke: var(--textColor) !important;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+
+                        .tourCardPriceCart {
+
+                            .tourCardCart {
+                                width: 42% !important;
+
+                                &:hover {
+                                    color: var(--textColor) !important;
+                                }
+
+                            }
+                        }
+
+                        .tourCardEditDeleteIcon {
+
+                            .edit {
+                                bottom: 26% !important;
+
+                                &:hover {
+                                    color: #edb142 !important;
+                                    fill: #edb142 !important;
+                                }
+                            }
+
+                            .trash {
+                                bottom: 26% !important;
+
+                                &:hover {
+                                    color: #b80000 !important;
+                                    fill: #b80000 !important;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+
+                        img {
+                            opacity: 1 !important;
+                        }
+
+                        .content {
+                            background-color: var(--borderColor) !important;
+                        }
+
+                    }
+                }
+
+                .emptyFavoritesPage {
+
+                    p {
+                        font-size: 8px !important;
+                    }
+
+                    a {
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // cart
+    .cartPage {
+        .cartContainer {
+
+            .cartProductsAndTours {
+
+                .cartTableContainer {
+
+                    h1 {
+                        font-size: 20px !important;
+                    }
+
+                    .tableContainer {
+
+                        .cartTableRow {
+
+                            .cartTableData {
+                                font-size: 10px !important;
+
+                                &:nth-child(1) {
+                                    img {
+                                        width: 40px !important;
+                                        height: 40px !important;
+                                    }
+                                }
+
+                                &:nth-child(4) {
+                                    width: 15% !important;
+                                }
+
+                                &:nth-child(5) {
+                                    width: 15% !important;
+                                }
+
+                                .cartQuantity {
+
+                                    svg {
+
+                                        &:hover {
+                                            color: var(--textColor) !important;
+                                        }
+                                    }
+                                }
+
+                                button {
+                                    svg {
+                                        width: 15px !important;
+
+                                        &:hover {
+                                            color: var(--textColor) !important;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .emptyCartPage {
+
+                    p {
+                        font-size: 8px !important;
+                    }
+
+                    .navigate {
+
+                        a {
+                            font-size: 13px !important;
+                            width: 50% !important;
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cartSubtotal {
+                height: 121px !important;
+
+                h1 {
+                    font-size: 10px !important;
+                }
+
+                p {
+                    font-size: 10px !important;
+                }
+
+                button {
+                    font-size: 10px !important;
+
+                    &:hover {
+                        background-color: transparent !important;
+                    }
+                }
+            }
+
+        }
+    }
+
+    //login&register
+    .formSection {
+
+        .loginForm {
+            width: 100% !important;
+
+            form {
+
+                input {
+
+                    &[type="submit"] {
+
+                        &:hover {
+                            background-color: var(--textColor) !important;
+                        }
+                    }
+                }
+
+                p {
+
+                    .business {
+                        font-size: 10px !important;
+                    }
+
+                    a {
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // business
+    .businessPage {
+
+        h1 {
+            font-size: 25px !important;
+        }
+
+        .businessCardsContainer {
+            display: block !important;
+
+            .businessCard {
+                width: 100% !important;
+                box-shadow: 0 0 5px var(--primaryColor) !important;
+
+                a {
+                    &:hover {
+                        color: var(--textColor) !important;
+                        background-color: #fff !important;
+                        border: 1px solid var(--textColor) !important;
+                    }
+                }
+
+                &.businessForSellers {
+                    margin-right: 0% !important;
+                    margin-bottom: 5% !important;
+                }
+
+            }
+        }
+    }
+
+    // business&seller
+    .sellerPage {
+        align-items: flex-start !important;
+
+        .creatingSection {
+            min-height: 471px !important;
+            max-height: 627px !important;
+
+            .createForm {
+                .createNewProduct {
+                    font-size: 15px !important;
+                }
+
+                .submitButton {
+                    font-size: 10px !important;
+                }
+
+                .formInput,
+                label {
+                    font-size: 10px !important;
+                }
+
+                .image {
+                    min-height: 100px !important;
+                    max-height: 100px !important;
+                }
+            }
+        }
+
+        .productsSection {
+            height: 471px !important;
+            min-height: 471px !important;
+            max-height: 627px !important;
+
+            .yourProducts {
+                font-size: 15px !important;
+            }
+
+            &::-webkit-scrollbar-thumb {
+
+                &:hover {
+                    background: var(--primaryColor) !important;
+                }
+            }
+
+            .productsContainer {
+
+                .productCard {
+                    width: 49% !important;
+                    margin-bottom: 2% !important;
+
+                    .productCardContent {
+                        .productCardTitle {
+                            font-size: 10px !important;
+                        }
+                    }
+
+                    .productCardPriceCart {
+                        .productCardPrice {
+                            font-size: 10px !important;
+                        }
+                    }
+
+                    .productCardEditDeleteIcon {
+                        svg {
+                            font-size: 20px !important;
+                            bottom: 2% !important;
+                        }
+
+                        .trash {
+
+                            &:hover {
+                                color: #b80000 !important;
+                                fill: #b80000 !important;
+                            }
+                        }
+
+                        .edit {
+
+                            &:hover {
+                                color: #edb142 !important;
+                                fill: #edb142 !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .productsSectionImage {
+                img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
+    // business&guide
+    .guidePage {
+        align-items: flex-start !important;
+
+        .creatingSection {
+            min-height: 600px !important;
+            max-height: 713px !important;
+
+            .createForm {
+                .createNewProduct {
+                    font-size: 15px !important;
+                }
+
+                .submitButton {
+                    font-size: 10px !important;
+                }
+
+                .formInput,
+                label {
+                    font-size: 10px !important;
+                }
+
+                .image {
+                    min-height: 100px !important;
+                    max-height: 100px !important;
+                }
+            }
+        }
+
+        .productsSection {
+            min-height: 600px !important;
+            max-height: 713px !important;
+
+            .yourProducts {
+                font-size: 15px !important;
+            }
+        }
+
+        .tourCard {
+            width: 100% !important;
+            height: 463px !important;
+            margin-bottom: 5% !important;
+
+            .tourCardCategory,
+            .tourCardLocation,
+            .tourCardShortDescription,
+            .tourCardStarting,
+            .tourCardEnding {
+                font-size: 10px !important;
+            }
+
+            .tourCardTitle {
+                font-size: 16px !important;
+            }
+
+            .tourCardCart {
+                display: none !important;
+            }
+
+            .showForOwner {
+                .trash {
+                    right: 1%;
+                    bottom: 3% !important;
+
+                    &:hover {
+                        color: #b80000 !important;
+                        fill: #b80000 !important;
+                    }
+                }
+
+                .edit {
+                    right: 20% !important;
+                    bottom: 3% !important;
+
+                    &:hover {
+                        color: #edb142 !important;
+                        fill: #edb142 !important;
+                    }
+                }
+            }
+
+            &:hover {
+
+                img {
+                    opacity: 1 !important;
+                }
+
+                .content {
+                    background-color: var(--borderColor) !important;
+                }
+
+            }
+        }
+    }
+
+    // footer
+    footer {
+        .footerAll {
+            .footerTop {
+                display: none !important;
+            }
+
+            .footerBottom {
+                border-top: none !important;
+
+                p {
+                    font-size: 10px !important;
+
+                    span {
+                        font-size: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    // notfound
+    .notFoundPage {
+        p {
+            font-size: 8px !important;
+        }
+
+        a {
+
+            &:hover {
+                color: var(--textColor) !important;
+            }
+        }
+    }
+}
+
+
+// tablet
+@media (min-width: 576px) and (max-width: 992px) {
+
+    // reset
+    .container {
+        padding: 0% 2% !important;
+    }
+
+    .slick-arrow {
+        display: none !important;
+    }
+
+    .slick-prev {
+        display: none !important;
+    }
+
+    .slick-next {
+        display: none !important;
+    }
+
+    // header
+    header {
+        .headerAll {
+            justify-content: space-between !important;
+
+            .linkNav {
+                font-size: 14px !important;
+            }
+
+            .headerLeft {
+                width: 18% !important;
+
+                .logo {
+                    svg {
+                        width: 92px !important;
+                        height: 23px !important;
+                    }
+                }
+            }
+
+            nav {
+                width: 33% !important;
+
+                .navItem {
+                    a {
+                        margin-right: 5px !important;
+                    }
+
+                    svg {
+                        display: none !important;
+                    }
+
+
+                    .linkNav {
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+
+                    &.navDropdown {
+
+                        .navDropdownMenu {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+
+            .headerRight {
+                width: 13% !important;
+
+                .linkSignup {
+                    font-size: 10px !important;
+                    min-width: 96px !important;
+
+                    &:hover {
+                        color: var(--textColor) !important;
+                    }
+                }
+
+                .linkSave {
+                    svg {
+                        width: 18px !important;
+                        height: 19px !important;
+                    }
+                }
+
+                .linkUser,
+                .linkFav,
+                .linkSave,
+                .linkCart {
+
+                    svg {
+                        font-size: 20px !important;
+                    }
+
+                    &:hover svg {
+                        color: var(--textColor) !important;
+                    }
+
+                    &:hover .favLength,
+                    &:hover .saveLength,
+                    &:hover .cartLength {
+                        background-color: var(--textColor) !important;
+                    }
+                }
+
+                .favLength,
+                .saveLength,
+                .cartLength {
+                    font-size: 8px !important;
+                    padding: 0px 2px !important;
+                }
+
+                .saveLength {
+                    top: -1px !important;
+                }
+
+            }
+        }
+    }
+
+    // home
+    .homePage {
+        .sliderContainer {
+            max-height: 298px !important;
+
+            .sliderAbout {
+                height: 298px !important;
+
+                .sliderAboutTextContainer {
+
+                    .sliderAboutTitle {
+                        h6 {
+                            font-size: 35px !important;
+                        }
+                    }
+
+                    .sliderAboutText {
+                        p {
+                            font-size: 14px !important;
+                        }
+                    }
+
+                    .sliderAboutButton {
+
+                        a {
+                            font-size: 12px !important;
+                            width: 125px !important;
+
+                            &:hover {
+                                background-color: var(--primaryColor) !important;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .sliderTours {
+                height: 298px !important;
+
+                .sliderToursTextContainer {
+
+                    .sliderToursTitle {
+                        h6 {
+                            font-size: 35px !important;
+                        }
+                    }
+
+                    .sliderToursText {
+                        p {
+                            font-size: 14px !important;
+                        }
+                    }
+
+                    .sliderToursButton {
+
+                        a {
+                            font-size: 12px !important;
+                            width: 125px !important;
+
+                            &:hover {
+                                background-color: var(--primaryColor) !important;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .sliderProducts {
+                height: 298px !important;
+
+                .sliderProductsTextContainer {
+
+                    .sliderProductsTitle {
+                        h6 {
+                            font-size: 35px !important;
+                        }
+                    }
+
+                    .sliderProductsText {
+                        p {
+                            font-size: 14px !important;
+                        }
+                    }
+
+                    .sliderProductsButton {
+
+                        a {
+                            font-size: 12px !important;
+                            width: 125px !important;
+
+                            &:hover {
+                                background-color: var(--primaryColor) !important;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .overlay {
+                height: 298px !important;
+            }
+
+        }
+
+        .gearsAndToursSection {
+
+            .gearsAndTours {
+
+                .attention {
+
+                    h1 {
+                        font-size: 30px !important;
+                    }
+
+                    p {
+                        font-size: 15px !important;
+                        margin: 10% 0% 0% 0% !important;
+                    }
+                }
+
+                .imagesContainer {
+
+                    img {
+                        height: 180px !important;
+                    }
+                }
+            }
+
+            .checkLest {
+                display: none !important;
+            }
+        }
+
+        .newArrivalsSection {
+            .newArrivalsContainer {
+                h1 {
+                    font-size: 20px !important;
+                    padding: 4% 0% 0.5% 0% !important;
+                }
+
+                .productCard {
+                    width: 99% !important;
+                    margin: 0% !important;
+
+                    .productCardPriceCart {
+
+                        .productCardCart {
+                            border: 1px solid var(--textColor) !important;
+                            width: 62% !important;
+
+                            p {
+                                font-size: 12px !important;
+                                opacity: 1 !important;
+                                visibility: visible !important;
+                            }
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                                background-color: transparent !important;
+
+                                svg {
+                                    color: var(--textColor) !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .productCardFavoriteIcon {
+                        right: 8% !important;
+
+                        &:hover {
+                            svg {
+                                color: var(--textColor) !important;
+                                fill: var(--textColor) !important;
+                            }
+                        }
+                    }
+
+                    .productCardEditDeleteIcon {
+                        .trash {
+                            right: 67% !important;
+                            top: 6% !important;
+                            font-size: 27px !important;
+
+                            &:hover {
+                                color: #b80000 !important;
+                                fill: #b80000 !important;
+                            }
+                        }
+
+                        .edit {
+                            right: 84% !important;
+                            top: 6% !important;
+
+                            &:hover {
+                                color: #edb142 !important;
+                                fill: #edb142 !important;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        border: 1px solid var(--borderColor) !important;
+                        box-shadow: none !important;
+
+                        .productCardCart {
+                            color: var(--textColor) !important;
+                            border: 1px solid var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .toursNewArrivalsSection {
+            .newArrivalsContainer {
+                h1 {
+                    font-size: 20px !important;
+                    padding: 4% 0% 0.5% 0% !important;
+                }
+
+                .tourCard {
+                    width: 99% !important;
+                    border: none !important;
+                    padding: 0% !important;
+                    margin: 0% !important;
+                    height: 472px !important;
+
+                    .categoryLocation {
+                        font-size: 10px !important;
+                        font-weight: 600 !important;
+                    }
+
+                    .content {
+
+                        .tourCardContent {
+
+                            .tourCardTitle {
+                                font-size: 16px !important;
+
+                                svg {
+
+                                    &:hover {
+                                        .polygon {
+                                            stroke: var(--textColor) !important;
+                                        }
+
+                                        .polygonSaved {
+                                            color: var(--textColor) !important;
+                                            fill: var(--textColor) !important;
+                                            stroke: var(--textColor) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .tourCardPriceCart {
+
+                            .tourCardCart {
+                                width: 62% !important;
+
+                                &:hover {
+                                    color: var(--textColor) !important;
+                                }
+
+                            }
+                        }
+
+                        .tourCardEditDeleteIcon {
+
+                            .edit {
+                                right: 24% !important;
+                                bottom: 24% !important;
+
+                                &:hover {
+                                    color: #edb142 !important;
+                                    fill: #edb142 !important;
+                                }
+                            }
+
+                            .trash {
+                                right: 12% !important;
+                                bottom: 24% !important;
+
+                                &:hover {
+                                    color: #b80000 !important;
+                                    fill: #b80000 !important;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+
+                        img {
+                            opacity: 1 !important;
+                        }
+
+                        .content {
+                            background-color: var(--borderColor) !important;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .instagramSection {
+
+            .instagram {
+
+                .title {
+                    font-size: 20px !important;
+                    padding: 1% 0% 0.5% 0% !important;
+                }
+            }
+
+            .imageContainer {
+                row-gap: 20px !important;
+
+                .image {
+                    width: 18% !important;
+
+                    &:nth-child(3) {
+                        width: 35% !important;
+                    }
+
+                    &:nth-child(6) {
+                        width: 35% !important;
+                    }
+
+                    &:nth-child(4) {
+                        margin-right: 0% !important;
+                    }
+
+                    &:nth-child(8) {
+                        margin-right: 0% !important;
+                    }
+
+                    img {
+                        height: 100px !important;
+                        vertical-align: bottom;
+                    }
+
+                    .overlay {
+                        height: 100px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    // products
+    .productPage {
+        .allCategoriesSection {
+            .allCategoriesContainer {
+                align-items: center !important;
+                flex-wrap: wrap !important;
+
+                p {
+                    a {
+                        font-size: 10px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .aboutProductsSection {
+            .aboutProductsContent {
+
+                h2 {
+                    font-size: 13px !important;
+                }
+
+                h4 {
+                    font-size: 11px !important;
+                }
+
+                h6 {
+                    font-size: 10px !important;
+                }
+            }
+
+            .overlay {
+                height: 237px !important;
+            }
+
+        }
+
+        .popularCategoriesSection {
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .category {
+
+                p {
+                    font-size: 12px !important;
+                }
+            }
+        }
+
+        .popularSellersSection {
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .popularSellersLogoContainer {
+                flex-wrap: wrap !important;
+
+                .popularSellersLogo {
+
+                    svg {
+                        fill: var(--textColor) !important;
+                        width: 75px !important;
+                    }
+
+                    &:hover {
+                        background-color: var(--borderColor) !important;
+                    }
+                }
+
+                .popularSellersLogo.yonja {
+                    font-size: 18px !important;
+
+                    svg {
+                        width: 23px !important;
+                    }
+                }
+            }
+
+
+        }
+
+        .newArrivalsSection {
+            .newArrivalsContainer {
+                h1 {
+                    font-size: 20px !important;
+                }
+
+                .productCard {
+                    width: 99% !important;
+                    margin: 0% !important;
+
+                    .productCardPriceCart {
+
+                        .productCardCart {
+                            border: 1px solid var(--textColor) !important;
+                            width: 62% !important;
+
+                            p {
+                                font-size: 12px !important;
+                                opacity: 1 !important;
+                                visibility: visible !important;
+                            }
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                                background-color: transparent !important;
+
+                                svg {
+                                    color: var(--textColor) !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .productCardFavoriteIcon {
+                        right: 8% !important;
+
+                        &:hover {
+                            svg {
+                                color: var(--textColor) !important;
+                                fill: var(--textColor) !important;
+                            }
+                        }
+                    }
+
+                    .productCardEditDeleteIcon {
+                        .trash {
+                            right: 67% !important;
+                            top: 6% !important;
+                            font-size: 27px !important;
+
+                            &:hover {
+                                color: #b80000 !important;
+                                fill: #b80000 !important;
+                            }
+                        }
+
+                        .edit {
+                            right: 84% !important;
+                            top: 6% !important;
+
+                            &:hover {
+                                color: #edb142 !important;
+                                fill: #edb142 !important;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        border: 1px solid var(--borderColor) !important;
+                        box-shadow: none !important;
+
+                        .productCardCart {
+                            color: var(--textColor) !important;
+                            border: 1px solid var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .shoppingFeaturesSection {
+
+            .shoppingFeaturesContainer {
+
+                .shoppingFeatures {
+                    max-width: 80% !important;
+
+                    .featuresIcon {
+                        margin: 0% 2% !important;
+
+                        svg {
+                            width: 30px !important;
+
+                            &:nth-child(1) {
+                                height: 43px !important;
+                            }
+                        }
+                    }
+
+                    .flexiblePayment {
+                        svg {
+                            height: 50px !important;
+                        }
+                    }
+
+                    .featuresContent {
+                        width: 100% !important;
+
+                        h4 {
+                            font-size: 10px !important;
+                            margin-bottom: 1% !important;
+                        }
+
+                        p {
+                            font-size: 10px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // products category
+    .productCategoryPage {
+        .allCategoriesSection {
+            .allCategoriesContainer {
+                align-items: center !important;
+                flex-wrap: wrap !important;
+
+                p {
+                    a {
+                        font-size: 10px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .aboutProductCategorySection {
+
+            .aboutProductCategoryContent {
+
+                h1 {
+                    font-size: 25px !important;
+                }
+
+                a,
+                span {
+                    font-size: 15px !important;
+                }
+            }
+
+            .overlay {
+                height: 198px !important;
+            }
+        }
+
+        .searchAndFilterSection {
+
+            .searchAndFilterContainer {
+
+                h1 {
+                    width: 21% !important;
+                    font-size: 12px !important;
+                }
+
+                .productCategorySearch {
+                    width: 32% !important;
+
+                    input {
+                        font-size: 12px !important;
+                        padding-right: 18% !important;
+                    }
+
+                    button {
+
+                        svg {
+                            font-size: 20px !important;
+                        }
+                    }
+
+                    .productCategorySearchItems {
+                        width: 377px !important;
+                        height: 277px !important;
+
+                        &::-webkit-scrollbar-thumb {
+
+                            &:hover {
+                                background: var(--primaryColor) !important;
+                            }
+                        }
+
+                        .searchResults {
+                            margin: 3%;
+
+                            .searchResultsItem {
+                                display: flex;
+                                align-items: center;
+
+                                .searchResultImage {
+                                    background-color: #fff;
+                                    width: 20%;
+                                    margin-right: 3%;
+
+                                    img {
+                                        width: 100%;
+                                        vertical-align: bottom;
+                                    }
+                                }
+
+                                .searchImageContent {
+                                    p {
+                                        font-size: 12px !important;
+
+                                        &:nth-child(1) {
+                                            width: 277px !important;
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    p {
+                                        color: var(--textColor) !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.emptySearchItems {
+                            font-size: 12px !important;
+                            height: 37px !important;
+                        }
+                    }
+                }
+
+                .productCategoryFilter {
+                    width: 21% !important;
+
+                    .reactSelectContainer {
+
+                        .reactSelect__control {
+                            background-color: #fff;
+                            font-size: 12px !important;
+                        }
+
+                        .reactSelect__option {
+                            font-size: 12px !important;
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                            }
+                        }
+
+                        .reactSelect__placeholder {
+                            font-size: 12px !important;
+                        }
+
+                        .reactSelect__single-value {
+                            font-size: 12px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .filteredProductsSection {
+            .filteredProductsContainer {
+
+                .filteredProductsCardContainer {
+
+                    .productCard {
+                        width: 49% !important;
+                        margin: 0% !important;
+                        margin-bottom: 2% !important;
+
+                        .productCardPriceCart {
+
+                            .productCardCart {
+                                border: 1px solid var(--textColor) !important;
+                                width: 62% !important;
+
+                                p {
+                                    font-size: 12px !important;
+                                    opacity: 1 !important;
+                                    visibility: visible !important;
+                                }
+
+                                &:hover {
+                                    color: var(--textColor) !important;
+                                    background-color: transparent !important;
+
+                                    svg {
+                                        color: var(--textColor) !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        .productCardFavoriteIcon {
+                            right: 8% !important;
+
+                            &:hover {
+                                svg {
+                                    color: var(--textColor) !important;
+                                    fill: var(--textColor) !important;
+                                }
+                            }
+                        }
+
+                        .productCardEditDeleteIcon {
+                            .trash {
+                                right: 67% !important;
+                                top: 6% !important;
+                                font-size: 27px !important;
+
+                                &:hover {
+                                    color: #b80000 !important;
+                                    fill: #b80000 !important;
+                                }
+                            }
+
+                            .edit {
+                                right: 84% !important;
+                                top: 6% !important;
+
+                                &:hover {
+                                    color: #edb142 !important;
+                                    fill: #edb142 !important;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            border: 1px solid var(--borderColor) !important;
+                            box-shadow: none !important;
+
+                            .productCardCart {
+                                color: var(--textColor) !important;
+                                border: 1px solid var(--textColor) !important;
+                            }
+                        }
+                    }
+                }
+
+                .loadMore {
+                    margin: 3% 0% 1% 0% !important;
+
+                    span {
+                        font-size: 10px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                            background-color: transparent !important;
+                            border: 1px solid var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // product details
+    .productDetailsCard {
+        display: block !important;
+
+        .productDetailsCardImg {
+            width: 40% !important;
+        }
+
+        .productDetailsContentAndAbout {
+            width: 100% !important;
+
+            .productDetailsContent {
+
+                .productDetailsTitle {
+                    font-size: 13px !important;
+                    font-weight: 500 !important;
+                }
+
+                .productDetailsPrice {
+                    font-size: 13px !important;
+                }
+
+                .productDetailsShortDescription {
+                    font-size: 10px !important;
+                }
+
+                .productDetailsFavoriteAndCart {
+
+                    .productDetailsFavorite {
+
+                        svg {
+                            font-size: 25px !important;
+                        }
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+
+                    .productDetailsCart {
+                        font-size: 13px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                            background-color: transparent !important;
+                            border: 1px solid var(--textColor) !important;
+
+                        }
+                    }
+
+                    .productDetailsRent {
+                        font-size: 13px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                            background-color: transparent !important;
+                            border: 1px solid var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+
+            .productDetailsAbout {
+
+                .productDetailsCode {
+                    font-size: 13px !important;
+
+                    span {
+                        width: 55% !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+
+                        p {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+
+                .productDetailsCategory {
+                    font-size: 13px !important;
+
+                    .category {
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+
+                .productDetailsSeller {
+                    font-size: 13px !important;
+                }
+
+                .descriptionDetails {
+
+                    summary {
+                        font-size: 13px !important;
+
+                        &::before {
+                            top: -23px !important;
+                        }
+                    }
+
+                    &[open] summary::before {
+                        top: -22px !important;
+                    }
+
+                    .productDetailsLongDescription {
+                        font-size: 10px !important;
+                    }
+                }
+
+                .informationDetails {
+
+                    summary {
+                        font-size: 13px !important;
+
+                        &::before {
+                            top: -23px !important;
+                        }
+                    }
+
+                    &[open] summary::before {
+                        top: -22px !important;
+                    }
+
+                    .productDetailsAdditionalInfo {
+                        font-size: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    // tours
+    .tourPage {
+        .allCategoriesSection {
+            .allCategoriesContainer {
+                align-items: center !important;
+                flex-wrap: wrap !important;
+
+                p {
+                    a {
+                        font-size: 10px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .aboutProductsSection {
+
+            .aboutProductsContent {
+                width: 60% !important;
+                margin-left: 40% !important;
+
+                h2 {
+                    font-size: 13px !important;
+                }
+
+                h4 {
+                    font-size: 11px !important;
+                }
+
+                h6 {
+                    font-size: 10px !important;
+                }
+            }
+
+            .overlay {
+                height: 226px !important;
+            }
+
+        }
+
+        .toursPopularCategoriesSection {
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .toursCategorySlider {
+
+                .slick-track,
+                .slick-list {
+                    height: 400px !important;
+                }
+
+                .category {
+                    border: none !important;
+
+                    .categoryImg {
+                        min-width: 600px !important;
+                        max-width: 800px !important;
+
+                        img {
+                            width: 100% !important;
+                        }
+
+                        p {
+                            background-color: var(--primaryColor) !important;
+                            font-size: 35px !important;
+                            opacity: 0.8 !important;
+                        }
+
+                        &:hover {
+
+                            img {
+                                opacity: 1 !important;
+                            }
+
+                            p {
+                                opacity: 1 !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .popularSellersSection {
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .popularSellersLogoContainer {
+                flex-wrap: wrap !important;
+
+                .popularSellersLogo {
+
+                    svg {
+                        fill: var(--textColor) !important;
+                        width: 82px !important;
+                    }
+
+                    &:hover {
+                        background-color: var(--borderColor) !important;
+                    }
+                }
+
+                .popularSellersLogo.yonja {
+                    font-size: 18px !important;
+
+                    svg {
+                        width: 23px !important;
+                    }
+                }
+            }
+
+
+        }
+
+        .toursNewArrivalsSection {
+            .newArrivalsContainer {
+                h1 {
+                    font-size: 20px !important;
+                    padding: 1% 0% 2% 0% !important;
+                }
+
+                .tourCard {
+                    width: 99% !important;
+                    border: none !important;
+                    padding: 0% !important;
+                    margin: 0% !important;
+                    height: 472px !important;
+
+                    .categoryLocation {
+                        font-size: 10px !important;
+                        font-weight: 600 !important;
+                    }
+
+                    .content {
+
+                        .tourCardContent {
+
+                            .tourCardTitle {
+                                font-size: 16px !important;
+
+                                svg {
+
+                                    &:hover {
+                                        .polygon {
+                                            stroke: var(--textColor) !important;
+                                        }
+
+                                        .polygonSaved {
+                                            color: var(--textColor) !important;
+                                            fill: var(--textColor) !important;
+                                            stroke: var(--textColor) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .tourCardPriceCart {
+
+                            .tourCardCart {
+                                width: 62% !important;
+
+                                &:hover {
+                                    color: var(--textColor) !important;
+                                }
+
+                            }
+                        }
+
+                        .tourCardEditDeleteIcon {
+
+                            .edit {
+                                right: 24% !important;
+                                bottom: 24% !important;
+
+                                &:hover {
+                                    color: #edb142 !important;
+                                    fill: #edb142 !important;
+                                }
+                            }
+
+                            .trash {
+                                right: 12% !important;
+                                bottom: 24% !important;
+
+                                &:hover {
+                                    color: #b80000 !important;
+                                    fill: #b80000 !important;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+
+                        img {
+                            opacity: 1 !important;
+                        }
+
+                        .content {
+                            background-color: var(--borderColor) !important;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .toursShoppingFeaturesSection {
+
+            .shoppingFeaturesContainer {
+
+                .shoppingFeatures {
+                    max-width: 80% !important;
+
+                    .featuresIcon {
+                        margin: 0% 2% !important;
+
+                        svg {
+                            width: 30px !important;
+
+                            &:nth-child(1) {
+                                height: 43px !important;
+                            }
+                        }
+                    }
+
+                    .flexiblePayment {
+                        svg {
+                            height: 50px !important;
+                        }
+                    }
+
+                    .featuresContent {
+                        width: 100% !important;
+
+                        h4 {
+                            font-size: 7px !important;
+                            margin-bottom: 1% !important;
+                        }
+
+                        p {
+                            font-size: 10px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // tours category
+    .tourCategoryPage {
+        .allTourCategoriesSection {
+            .allCategoriesContainer {
+                align-items: center !important;
+                flex-wrap: wrap !important;
+
+                p {
+                    a {
+                        font-size: 10px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .aboutTourCategorySection {
+            height: 198px !important;
+            padding: 1% 0% 0% 0% !important;
+
+            .aboutTourCategoryContent {
+
+                h1 {
+                    font-size: 25px !important;
+                }
+
+                a,
+                span {
+                    font-size: 15px !important;
+                }
+
+                p {
+                    font-size: 10px !important;
+                }
+            }
+
+            .overlay {
+                height: 198px !important;
+            }
+        }
+
+        .searchAndFilterSection {
+
+            .searchAndFilterContainer {
+
+                h1 {
+                    width: 21% !important;
+                    font-size: 12px !important;
+                }
+
+                .productCategorySearch {
+                    width: 32% !important;
+
+                    input {
+                        font-size: 12px !important;
+                        padding-right: 18% !important;
+                    }
+
+                    button {
+
+                        svg {
+                            font-size: 20px !important;
+                        }
+                    }
+
+                    .productCategorySearchItems {
+                        width: 377px !important;
+                        height: 277px !important;
+
+                        &::-webkit-scrollbar-thumb {
+
+                            &:hover {
+                                background: var(--primaryColor) !important;
+                            }
+                        }
+
+                        .searchResults {
+                            margin: 3%;
+
+                            .searchResultsItem {
+                                display: flex;
+                                align-items: center;
+
+                                .searchResultImage {
+                                    background-color: #fff;
+                                    width: 20%;
+                                    margin-right: 3%;
+
+                                    img {
+                                        width: 100%;
+                                        vertical-align: bottom;
+                                    }
+                                }
+
+                                .searchImageContent {
+                                    p {
+                                        font-size: 12px !important;
+
+                                        &:nth-child(1) {
+                                            width: 277px !important;
+                                        }
+                                    }
+                                }
+
+                                &:hover {
+                                    p {
+                                        color: var(--textColor) !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.emptySearchItems {
+                            font-size: 12px !important;
+                            height: 37px !important;
+                        }
+                    }
+                }
+
+                .tourCategoryFilter {
+                    width: 21% !important;
+
+                    .reactSelectContainer {
+
+                        .reactSelect__control {
+                            background-color: #fff;
+                            font-size: 12px !important;
+                        }
+
+                        .reactSelect__option {
+                            font-size: 12px !important;
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                            }
+                        }
+
+                        .reactSelect__placeholder {
+                            font-size: 12px !important;
+                        }
+
+                        .reactSelect__single-value {
+                            font-size: 12px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .filteredToursSection {
+            .filteredToursContainer {
+
+                .filteredToursCardContainer {
+
+                    .tourCard {
+                        width: 49% !important;
+                        border: none !important;
+                        height: 472px !important;
+                        padding: 0% !important;
+                        margin: 0% !important;
+                        margin-bottom: 2% !important;
+
+                        .categoryLocation {
+                            font-size: 10px !important;
+                            font-weight: 600 !important;
+                        }
+
+                        .content {
+
+                            .tourCardContent {
+
+                                .tourCardTitle {
+                                    font-size: 16px !important;
+
+                                    svg {
+
+                                        &:hover {
+                                            .polygon {
+                                                stroke: var(--textColor) !important;
+                                            }
+
+                                            .polygonSaved {
+                                                color: var(--textColor) !important;
+                                                fill: var(--textColor) !important;
+                                                stroke: var(--textColor) !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .tourCardPriceCart {
+
+                                .tourCardCart {
+                                    width: 62% !important;
+
+                                    &:hover {
+                                        color: var(--textColor) !important;
+                                    }
+
+                                }
+                            }
+
+                            .tourCardEditDeleteIcon {
+
+                                .edit {
+                                    right: 24% !important;
+                                    bottom: 24% !important;
+
+                                    &:hover {
+                                        color: #edb142 !important;
+                                        fill: #edb142 !important;
+                                    }
+                                }
+
+                                .trash {
+                                    right: 12% !important;
+                                    bottom: 24% !important;
+
+                                    &:hover {
+                                        color: #b80000 !important;
+                                        fill: #b80000 !important;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+
+                            img {
+                                opacity: 1 !important;
+                            }
+
+                            .content {
+                                background-color: var(--borderColor) !important;
+                            }
+
+                        }
+                    }
+                }
+
+                .loadMore {
+                    margin: 3% 0% 1% 0% !important;
+
+                    span {
+                        font-size: 10px !important;
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                            background-color: transparent !important;
+                            border: 1px solid var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // tours details
+    .tourDetailsPage {
+
+        .tourDetails {
+
+            .tourDetailsImage {
+                min-height: 250px !important;
+            }
+
+            .cardAndTicketAndWeather {
+
+                .tourDetailsCard {
+                    min-height: 309px !important;
+
+                    .tourDetailsContent {
+                        .tourDetailsTitle {
+                            font-size: 25px !important;
+                        }
+
+                        .tourDetailsLocation {
+                            font-size: 16px !important;
+                        }
+
+                        .tourDetailsShortDescription {
+                            font-size: 13px !important;
+                        }
+
+                        .tourDetailsSave {
+
+                            svg {
+                                width: 25px !important;
+                                height: 25px !important;
+
+                                &:hover {
+                                    .polygon {
+                                        stroke: var(--textColor) !important;
+                                    }
+
+                                    .polygonSaved {
+                                        color: var(--textColor) !important;
+                                        fill: var(--textColor) !important;
+                                        stroke: var(--textColor) !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .tourDetailsAbout {
+
+                        .tourDetailsCategory {
+                            font-size: 16px !important;
+
+                            a {
+                                &:hover {
+                                    color: var(--textColor) !important;
+                                }
+                            }
+                        }
+
+                        .tourDetailsGuide {
+                            font-size: 16px !important;
+                        }
+
+                        .descriptionDetails {
+
+                            summary {
+                                font-size: 16px !important;
+
+                                &::before {
+                                    top: -23px !important;
+                                }
+                            }
+
+                            &[open] summary::before {
+                                top: -22px !important;
+                            }
+
+                            .tourDetailsLongDescription {
+                                font-size: 13px !important;
+                            }
+                        }
+
+                        .informationDetails {
+
+                            summary {
+                                font-size: 16px !important;
+
+                                &::before {
+                                    top: -23px !important;
+                                }
+                            }
+
+                            &[open] summary::before {
+                                top: -22px !important;
+                            }
+
+                            .tourDetailsAdditionalInfo {
+                                font-size: 13px !important;
+                            }
+                        }
+                    }
+                }
+
+                .ticketAndWeather {
+                    width: 35% !important;
+
+                    .tourDetailsTicket {
+
+                        .tourDetailsTicketTitle {
+                            font-size: 16px !important;
+                        }
+
+                        .tourDetailsStarting {
+                            font-size: 13px !important;
+                        }
+
+                        .tourDetailsEnding {
+                            font-size: 13px !important;
+                        }
+
+                        .tourDetailsPrice {
+                            font-size: 13px !important;
+                        }
+
+                        .tourCardCart {
+                            font-size: 13px !important;
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                                background-color: var(--borderColor) !important;
+                                border: 1px solid var(--textColor) !important;
+                            }
+                        }
+                    }
+
+                    .weather {
+                        .weatherCard {
+                            .cityName {
+                                font-size: 16px !important;
+                            }
+
+                            .weatherContent {
+                                flex-direction: column !important;
+                                align-items: start !important;
+
+                                p {
+                                    font-size: 13px !important;
+                                }
+
+                                .weatherLeft {
+                                    border: none !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .overlay {
+                height: 285px !important;
+            }
+        }
+    }
+
+    // about
+    .aboutPage {
+
+        h3 {
+            font-size: 20px !important;
+        }
+
+        .slogan {
+
+            h1 {
+                font-size: 25px !important;
+            }
+        }
+
+        .about {
+
+            .aboutPart {
+
+                p {
+                    font-size: 13px !important;
+                }
+            }
+        }
+
+        .values {
+
+            .valuesContainer {
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+
+                .valueContainer {
+                    width: 55% !important;
+                    background-color: #ffffff1c !important;
+                    box-shadow: 0 0 5px #fff;
+                    margin-bottom: 5% !important;
+
+                    &:nth-last-child(1) {
+                        margin-bottom: 0% !important;
+                    }
+                }
+            }
+        }
+
+        .team {
+
+            .teamContainer {
+                flex-wrap: wrap !important;
+                justify-content: center !important;
+
+                .member {
+                    width: 55% !important;
+                    margin-bottom: 5% !important;
+
+                    &:nth-last-child(1) {
+                        margin-bottom: 0% !important;
+                    }
+
+                    .image {
+                        img {
+                            min-height: 250px !important;
+                            max-height: 300px !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .careers {
+
+            p {
+                font-size: 13px !important;
+            }
+
+            a {
+                font-size: 13px !important;
+
+                &:hover {
+                    background-color: transparent !important;
+                }
+            }
+        }
+
+        .contact {
+
+            p {
+                font-size: 13px !important;
+            }
+
+            a {
+                font-size: 13px !important;
+            }
+        }
+    }
+
+    // favorites
+    .favoritesPage {
+        .favoritesContainer {
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .favoritesCardContainer {
+
+                .productCard {
+                    width: 49% !important;
+                    margin: 0% !important;
+                    margin-bottom: 2% !important;
+
+                    .productCardTitle {
+                        font-size: 13px !important;
+                    }
+
+                    .productCardPriceCart {
+                        .productCardPrice {
+                            font-size: 13px !important;
+                        }
+
+                        .productCardCart {
+                            border: 1px solid var(--textColor) !important;
+                            width: 65% !important;
+
+                            p {
+                                font-size: 10px !important;
+                                opacity: 1 !important;
+                                visibility: visible !important;
+                            }
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                                background-color: transparent !important;
+
+                                svg {
+                                    color: var(--textColor) !important;
+                                }
+                            }
+                        }
+                    }
+
+                    .productCardFavoriteIcon {
+                        right: 8% !important;
+
+                        &:hover {
+                            svg {
+                                color: var(--textColor) !important;
+                                fill: var(--textColor) !important;
+                            }
+                        }
+                    }
+
+                    .productCardEditDeleteIcon {
+
+                        .trash {
+                            right: 67% !important;
+                            top: 6% !important;
+                            font-size: 27px !important;
+
+                            &:hover {
+                                color: #b80000 !important;
+                                fill: #b80000 !important;
+                            }
+                        }
+
+                        .edit {
+                            right: 84% !important;
+                            top: 6% !important;
+
+                            &:hover {
+                                color: #edb142 !important;
+                                fill: #edb142 !important;
+                            }
+                        }
+                    }
+
+                    &:hover {
+                        border: 1px solid var(--borderColor) !important;
+                        box-shadow: none !important;
+
+                        .productCardCart {
+                            color: var(--textColor) !important;
+                            border: 1px solid var(--textColor) !important;
+                        }
+                    }
+                }
+
+                .emptyFavoritesPage {
+
+                    p {
+                        font-size: 10px !important;
+                    }
+
+                    a {
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // saved
+    .savedPage {
+        .savedContainer {
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            .savedCardContainer {
+
+                .tourCard {
+                    width: 49% !important;
+                    border: none !important;
+                    height: 472px !important;
+                    padding: 0% !important;
+                    margin: 0% !important;
+                    margin-bottom: 2% !important;
+
+                    .categoryLocation {
+                        font-size: 10px !important;
+                        font-weight: 600 !important;
+                    }
+
+                    .content {
+
+                        .tourCardContent {
+
+                            .tourCardTitle {
+                                font-size: 16px !important;
+
+                                svg {
+
+                                    &:hover {
+                                        .polygon {
+                                            stroke: var(--textColor) !important;
+                                        }
+
+                                        .polygonSaved {
+                                            color: var(--textColor) !important;
+                                            fill: var(--textColor) !important;
+                                            stroke: var(--textColor) !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .tourCardPriceCart {
+
+                            .tourCardCart {
+                                width: 62% !important;
+
+                                &:hover {
+                                    color: var(--textColor) !important;
+                                }
+
+                            }
+                        }
+
+                        .tourCardEditDeleteIcon {
+
+                            .edit {
+                                right: 24% !important;
+                                bottom: 24% !important;
+
+                                &:hover {
+                                    color: #edb142 !important;
+                                    fill: #edb142 !important;
+                                }
+                            }
+
+                            .trash {
+                                right: 12% !important;
+                                bottom: 24% !important;
+
+                                &:hover {
+                                    color: #b80000 !important;
+                                    fill: #b80000 !important;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover {
+
+                        img {
+                            opacity: 1 !important;
+                        }
+
+                        .content {
+                            background-color: var(--borderColor) !important;
+                        }
+
+                    }
+                }
+
+                .emptyFavoritesPage {
+
+                    p {
+                        font-size: 10px !important;
+                    }
+
+                    a {
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // cart
+    .cartPage {
+        .cartContainer {
+
+            .cartProductsAndTours {
+
+                .cartTableContainer {
+
+                    h1 {
+                        font-size: 20px !important;
+                    }
+
+                    .tableContainer {
+
+                        .cartTableRow {
+
+                            .cartTableData {
+                                font-size: 10px !important;
+
+                                &:nth-child(1) {
+                                    img {
+                                        width: 40px !important;
+                                        height: 40px !important;
+                                    }
+                                }
+
+                                &:nth-child(4) {
+                                    width: 15% !important;
+                                }
+
+                                &:nth-child(5) {
+                                    width: 15% !important;
+                                }
+
+                                .cartQuantity {
+
+                                    svg {
+
+                                        &:hover {
+                                            color: var(--textColor) !important;
+                                        }
+                                    }
+                                }
+
+                                button {
+                                    svg {
+                                        width: 15px !important;
+
+                                        &:hover {
+                                            color: var(--textColor) !important;
+                                        }
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .emptyCartPage {
+
+                    p {
+                        font-size: 10px !important;
+                    }
+
+                    .navigate {
+
+                        a {
+                            font-size: 13px !important;
+                            width: 50% !important;
+
+                            &:hover {
+                                color: var(--textColor) !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cartSubtotal {
+                height: 121px !important;
+
+                h1 {
+                    font-size: 10px !important;
+                }
+
+                p {
+                    font-size: 10px !important;
+                }
+
+                button {
+                    font-size: 10px !important;
+
+                    &:hover {
+                        background-color: transparent !important;
+                    }
+                }
+            }
+
+        }
+    }
+
+    //login&register
+    .formSection {
+
+        .loginForm {
+            width: 70% !important;
+
+            form {
+
+                input {
+
+                    &[type="submit"] {
+
+                        &:hover {
+                            background-color: var(--textColor) !important;
+                        }
+                    }
+                }
+
+                p {
+
+                    .business {
+                        font-size: 10px !important;
+                    }
+
+                    a {
+
+                        &:hover {
+                            color: var(--textColor) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // business
+    .businessPage {
+
+        h1 {
+            font-size: 25px !important;
+        }
+
+        .businessCardsContainer {
+            display: block !important;
+
+            .businessCard {
+                width: 100% !important;
+                box-shadow: 0 0 5px var(--primaryColor) !important;
+
+                a {
+                    &:hover {
+                        color: var(--textColor) !important;
+                        background-color: #fff !important;
+                        border: 1px solid var(--textColor) !important;
+                    }
+                }
+
+                &.businessForSellers {
+                    margin-right: 0% !important;
+                    margin-bottom: 5% !important;
+                }
+
+            }
+        }
+    }
+
+    // business&seller
+    .sellerPage {
+        align-items: flex-start !important;
+
+        .creatingSection {
+            min-height: 471px !important;
+            max-height: 645px !important;
+
+            .createForm {
+                .createNewProduct {
+                    font-size: 15px !important;
+                }
+
+                .submitButton {
+                    font-size: 10px !important;
+                }
+
+                .formInput,
+                label {
+                    font-size: 10px !important;
+                }
+
+                .image {
+                    min-height: 100px !important;
+                    max-height: 100px !important;
+                }
+            }
+        }
+
+        .productsSection {
+            height: 488px !important;
+            min-height: 488px !important;
+            max-height: 645px !important;
+
+            .yourProducts {
+                font-size: 15px !important;
+            }
+
+            &::-webkit-scrollbar-thumb {
+
+                &:hover {
+                    background: var(--primaryColor) !important;
+                }
+            }
+
+            .productsContainer {
+
+                .productCard {
+                    width: 49% !important;
+                    margin-bottom: 2% !important;
+
+                    .productCardContent {
+                        .productCardTitle {
+                            font-size: 10px !important;
+                        }
+                    }
+
+                    .productCardPriceCart {
+                        .productCardPrice {
+                            font-size: 10px !important;
+                        }
+                    }
+
+                    .productCardEditDeleteIcon {
+                        svg {
+                            font-size: 20px !important;
+                            bottom: 2% !important;
+                        }
+
+                        .trash {
+
+                            &:hover {
+                                color: #b80000 !important;
+                                fill: #b80000 !important;
+                            }
+                        }
+
+                        .edit {
+
+                            &:hover {
+                                color: #edb142 !important;
+                                fill: #edb142 !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .productsSectionImage {
+                img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+
+    // business&guide
+    .guidePage {
+        align-items: flex-start !important;
+
+        .creatingSection {
+            min-height: 600px !important;
+            max-height: 771px !important;
+
+            .createForm {
+                .createNewProduct {
+                    font-size: 15px !important;
+                }
+
+                .submitButton {
+                    font-size: 10px !important;
+                }
+
+                .formInput,
+                label {
+                    font-size: 10px !important;
+                }
+
+                .image {
+                    min-height: 100px !important;
+                    max-height: 100px !important;
+                }
+            }
+        }
+
+        .productsSection {
+            min-height: 666px !important;
+            max-height: 771px !important;
+
+            .yourProducts {
+                font-size: 15px !important;
+            }
+        }
+
+        .tourCard {
+            width: 100% !important;
+            height: 472px !important;
+            margin-bottom: 5% !important;
+
+            .tourCardCategory,
+            .tourCardLocation,
+            .tourCardShortDescription,
+            .tourCardStarting,
+            .tourCardEnding {
+                font-size: 13px !important;
+            }
+
+            .tourCardTitle {
+                font-size: 16px !important;
+            }
+
+            .tourCardCart {
+                display: none !important;
+            }
+
+            .showForOwner {
+                .trash {
+                    right: 1%;
+                    bottom: 3% !important;
+
+                    &:hover {
+                        color: #b80000 !important;
+                        fill: #b80000 !important;
+                    }
+                }
+
+                .edit {
+                    right: 20% !important;
+                    bottom: 3% !important;
+
+                    &:hover {
+                        color: #edb142 !important;
+                        fill: #edb142 !important;
+                    }
+                }
+            }
+
+            &:hover {
+
+                img {
+                    opacity: 1 !important;
+                }
+
+                .content {
+                    background-color: var(--borderColor) !important;
+                }
+
+            }
+        }
+    }
+
+    // footer
+    footer {
+        .footerAll {
+            .footerTop {
+                display: none !important;
+            }
+
+            .footerBottom {
+                border-top: none !important;
+
+                p {
+                    font-size: 14px !important;
+
+                    span {
+                        font-size: 15px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    // notfound
+    .notFoundPage {
+        p {
+            font-size: 10px !important;
+        }
+
+        a {
+
+            &:hover {
+                color: var(--textColor) !important;
+            }
+        }
+    }
+}

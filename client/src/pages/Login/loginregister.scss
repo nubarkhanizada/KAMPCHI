@@ -1,0 +1,76 @@
+@import '../../styles/reset.scss';
+
+.formSection {
+    text-align: center;
+    margin: 3% 0%;
+
+    .createNewUser {
+        color: var(--textColor);
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .loginForm {
+        padding: 2%;
+        margin: auto;
+        width: 35%;
+        background-color: var(--borderColor);
+
+        form {
+
+            input {
+                background-color: #fff;
+                font-size: 16px;
+                outline: none;
+                border: none;
+                width: 80%;
+                padding: 3%;
+                margin: 5% 0%;
+
+                &::placeholder {
+                    color: var(--textColor);
+                }
+
+                &:focus {
+                    color: var(--primaryColor);
+                    box-shadow: 0 0 5px var(--primaryColor);
+
+                    &::placeholder {
+                        color: var(--primaryColor);
+                    }
+                }
+
+                // &[type="email"] {}
+
+                // &[type="current-password"] {}
+
+                &[type="submit"] {
+                    color: #fff;
+                    background-color: var(--textColor);
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    &:hover {
+                        background-color: var(--primaryColor);
+                    }
+                }
+            }
+
+            p {
+                color: var(--textColor);
+                text-align: start;
+                margin-left: 42px;
+
+                a {
+                    color: var(--textColor);
+                    margin-left: 10px;
+                    transition: 0.4s;
+
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+}

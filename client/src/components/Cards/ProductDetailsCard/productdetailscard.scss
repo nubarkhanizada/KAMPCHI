@@ -1,0 +1,247 @@
+@import '../../../styles/reset.scss';
+
+.productDetailsCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px var(--primaryColor);
+    margin: 3% 0%;
+
+    .productDetailsCardImg {
+        width: 40%;
+        padding: 3%;
+
+        img {
+            width: 100%;
+            vertical-align: bottom;
+        }
+    }
+
+    .productDetailsContentAndAbout {
+        width: 60%;
+        padding: 3%;
+
+        .productDetailsContent {
+
+            .productDetailsTitle {
+                color: var(--textColor);
+                font-size: 20px;
+            }
+
+            .productDetailsPrice {
+                color: var(--textColor);
+                font-size: 18px;
+                font-weight: 500;
+                margin: 3% 0%;
+            }
+
+            .productDetailsShortDescription {
+                color: var(--textColor);
+                font-size: 15px;
+            }
+
+            .productDetailsStockAndRent {
+                display: flex;
+                align-items: center;
+                margin: 3% 0%;
+
+                .stockSuccess {
+                    color: #fff;
+                    background-color: var(--primaryColor);
+                    font-size: 12px;
+                    padding: 4px 8px;
+                    margin-right: 3%;
+                }
+
+                .stockError {
+                    color: var(--textColor);
+                    background-color: var(--borderColor);
+                    font-size: 12px;
+                    padding: 4px 8px;
+                    margin-right: 3%;
+                }
+
+                .rentSuccess {
+                    color: #fff;
+                    background-color: var(--primaryColor);
+                    font-size: 12px;
+                    padding: 4px 8px;
+                }
+            }
+
+            .productDetailsFavoriteAndCart {
+                display: flex;
+                align-items: center;
+                margin-bottom: 3%;
+
+                .productDetailsFavorite {
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    svg {
+                        font-size: 40px;
+                        vertical-align: bottom;
+                    }
+
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+
+                .productDetailsCart {
+                    color: var(--textColor);
+                    border: 1px solid var(--textColor);
+                    font-weight: 500;
+                    margin: 0% 3%;
+                    padding: 1%;
+                    transition: 0.4s;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: var(--primaryColor);
+                        border: 1px solid var(--primaryColor);
+
+                    }
+                }
+
+                .productDetailsRent {
+                    color: var(--textColor);
+                    border: 1px solid var(--textColor);
+                    font-weight: 500;
+                    cursor: pointer;
+                    padding: 1%;
+                    transition: 0.4s;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: var(--primaryColor);
+                        border: 1px solid var(--primaryColor);
+
+                    }
+                }
+
+            }
+        }
+
+        .productDetailsAbout {
+            border-top: 1px solid var(--borderColor);
+
+            .productDetailsCode {
+                display: flex;
+                align-items: baseline;
+                color: var(--textColor);
+                font-size: 15px;
+                margin-top: 3%;
+
+                span {
+                    width: 85%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: baseline;
+                    margin-left: 4px;
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+
+                    p {
+                        color: var(--primaryColor);
+                        text-align: end;
+                    }
+                }
+            }
+
+            .productDetailsCategory {
+                color: var(--textColor);
+                font-size: 15px;
+
+                .category {
+                    color: var(--textColor);
+                    transition: 0.4s;
+
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+
+            .productDetailsSeller {
+                color: var(--textColor);
+            }
+
+            .descriptionDetails {
+                position: relative;
+                color: var(--textColor);
+                margin-top: 3%;
+
+                summary {
+                    font-weight: 500;
+                    list-style: none;
+                    cursor: pointer;
+
+                    &::-webkit-details-marker {
+                        display: none;
+                    }
+
+                    &::before {
+                        content: '₊';
+                        position: absolute;
+                        right: 0;
+                        top: -30px;
+                        font-size: 3em;
+                    }
+                }
+
+                &[open] summary::before {
+                    content: '₋';
+                    top: -29px;
+                }
+
+                .productDetailsLongDescription {
+                    margin-top: 1%;
+                    font-size: 15px;
+                }
+            }
+
+            .informationDetails {
+                position: relative;
+                color: var(--textColor);
+                margin-top: 1%;
+
+                summary {
+                    font-weight: 500;
+                    list-style: none;
+                    cursor: pointer;
+
+                    &::-webkit-details-marker {
+                        display: none;
+                    }
+
+                    &::before {
+                        content: '₊';
+                        position: absolute;
+                        right: 0;
+                        top: -30px;
+                        font-size: 3em;
+                    }
+                }
+
+                &[open] summary::before {
+                    content: '₋';
+                    top: -29px;
+                }
+
+                .productDetailsAdditionalInfo {
+                    margin-top: 1%;
+                    font-size: 15px;
+
+                    span {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

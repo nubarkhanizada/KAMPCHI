@@ -1,0 +1,302 @@
+@import '../../../styles/reset.scss';
+
+.tourCategoryPage {
+    .allTourCategoriesSection {}
+
+    .aboutTourCategorySection {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        height: 509px;
+        padding: 11% 0% 2% 0%;
+
+        .aboutTourCategoryContent {
+            margin-top: 7%;
+
+            h1 {
+                position: relative;
+                color: #fff;
+                font-size: 60px;
+                font-weight: 500;
+                margin-top: 2%;
+                z-index: 1;
+            }
+
+            p {
+                position: relative;
+                color: #fff;
+                background-color: #21212175;
+                margin-top: 2%;
+                z-index: 1;
+
+            }
+
+            a,
+            span {
+                position: relative;
+                color: #fff;
+                font-size: 15px;
+                font-weight: 500;
+                z-index: 1;
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 509px;
+            background-color: var(--textColor);
+            opacity: 0.6;
+        }
+    }
+
+    .searchAndFilterSection {
+
+        .searchAndFilterContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1% 0%;
+            border-bottom: 1px solid var(--textColor);
+
+            h1 {
+                width: 16%;
+                font-size: 16px;
+                font-weight: 500;
+                padding: 8px 0px 8px 0px;
+            }
+
+            .tourCategoryFilter {
+                width: 16%;
+                
+            }
+        }
+    }
+
+    .filteredToursSection {
+        .filteredToursContainer {
+
+            .filteredToursCardContainer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 3% 0%;
+
+                .tourCard {
+                    position: relative;
+                    color: var(--textColor);
+                    background-color: var(--borderColor);
+                    width: 33%;
+                    height: 502px;
+                    padding: 0%;
+                    margin-bottom: 2%;
+                    overflow: hidden;
+                    transition: 0.4s;
+
+                    .tourCardImg {
+
+                        img {
+                            width: 100%;
+                            height: 300px;
+                            transition: 0.4s;
+                        }
+                    }
+
+                    .content {
+                        background-color: var(--borderColor);
+                        padding: 1%;
+                        transition: 0.4s;
+
+                        .tourCardContent {
+                            text-align: start;
+                            margin-bottom: 2%;
+                            border-bottom: 1px solid var(--textColor);
+
+                            .categoryLocation {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                color: var(--textColor);
+                                font-size: 15px;
+                                font-weight: 500;
+                                margin-bottom: 5%;
+
+                                // .tourCardCategory {}
+
+                                // .tourCardLocation {}
+
+                            }
+
+                            .tourCardTitle {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                color: var(--textColor);
+                                font-size: 20px;
+                                font-weight: 500;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                margin-bottom: 1%;
+
+                                svg {
+                                    font-size: 30px;
+                                    cursor: pointer;
+                                    transition: 0.4s;
+
+                                    .polygon {
+                                        stroke: var(--textColor);
+                                        transition: 0.4s;
+                                    }
+
+                                    .polygonSaved {
+                                        fill: var(--textColor);
+                                        transition: 0.4s;
+                                    }
+
+                                    &:hover {
+                                        .polygon {
+                                            stroke: var(--primaryColor);
+                                        }
+
+                                        .polygonSaved {
+                                            color: var(--primaryColor);
+                                            fill: var(--primaryColor) !important;
+                                            stroke: var(--primaryColor) !important;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .tourCardShortDescription {
+                                color: var(--textColor);
+                                font-size: 15px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                margin-bottom: 2%;
+                            }
+                        }
+
+                        .tourCardTime {
+                            height: 44px;
+                            margin-bottom: 2%;
+
+                            .tourCardStarting {
+                                margin-bottom: 1%;
+                            }
+
+                            // .tourCardEnding {}
+                        }
+
+                        .tourCardPriceCart {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .tourCardPrice {
+                                color: var(--textColor);
+                                font-weight: 500;
+                            }
+
+                            .tourCardCart {
+                                display: flex;
+                                justify-content: end;
+                                align-items: center;
+                                color: var(--textColor);
+                                width: 40%;
+                                transition: 0.4s;
+
+                                svg {
+                                    font-size: 26px;
+                                    margin-right: 3%;
+                                }
+
+                                p {
+                                    font-weight: 500;
+                                }
+
+                                &:hover {
+                                    color: var(--primaryColor);
+                                }
+
+                            }
+                        }
+
+                        .tourCardEditDeleteIcon {
+                            color: var(--textColor);
+                            display: none;
+
+                            svg {
+                                position: absolute;
+                                bottom: 24%;
+                                right: 10%;
+                                cursor: pointer;
+                                transition: 0.4s;
+
+                                &:hover {
+                                    color: var(--primaryColor);
+                                    fill: var(--primaryColor);
+                                }
+                            }
+
+                            .edit {
+                                right: 18%;
+                                bottom: 24%;
+                                color: #edb142;
+                                font-size: 31px;
+                            }
+
+                            .trash {
+                                color: #b80000;
+                                font-size: 31px;
+                            }
+
+                            &.showForOwner {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    &:hover {
+
+                        img {
+                            opacity: 0.8;
+                        }
+
+                        .content {
+                            background-color: #fff;
+                        }
+
+                    }
+                }
+            }
+
+            .loadMore {
+                text-align: center;
+                margin-bottom: 1%;
+                cursor: pointer;
+
+                span {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: var(--textColor);
+                    border: 1px solid var(--textColor);
+                    text-decoration: none;
+                    padding: 1% 3%;
+                    width: 200px;
+                    transition: 0.4s ease;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: var(--primaryColor);
+                        border: 1px solid var(--primaryColor);
+                    }
+                }
+            }
+        }
+    }
+}

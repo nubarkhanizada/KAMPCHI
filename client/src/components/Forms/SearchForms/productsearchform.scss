@@ -1,0 +1,148 @@
+@import '../../../styles/reset.scss';
+
+.productCategorySearch {
+    position: relative;
+    width: 40%;
+
+    input {
+        position: relative;
+        color: var(--primaryColor);
+        background: transparent;
+        font-size: 16px;
+        font-weight: 500;
+        outline: none;
+        border: none;
+        border: 1px solid var(--textColor);
+        width: 100%;
+        padding: 8px 5px 8px 5px;
+        transition: 0.4s;
+
+        &::placeholder {
+            color: var(--textColor);
+            font-family: var(--primaryFont)
+        }
+
+        &:hover {
+            border-bottom: 1px solid var(--textColor);
+        }
+
+        &:focus {
+            color: var(--primaryColor);
+            border: 1px solid transparent;
+            box-shadow: 0 0 5px var(--primaryColor);
+
+            &::placeholder {
+                color: var(--primaryColor);
+            }
+        }
+    }
+
+    button {
+        position: absolute;
+        right: 1%;
+        background: transparent;
+        border: none;
+        padding-top: 4px;
+
+        svg {
+            color: var(--textColor);
+            font-size: 25px;
+        }
+    }
+
+    &:focus-within button svg {
+        color: var(--primaryColor);
+    }
+
+    .productCategorySearchItems {
+        position: absolute;
+        top: 140%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        border: 1px solid var(--primaryColor);
+        width: 577px;
+        height: 400px;
+        z-index: 1;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: var(--borderColor);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: var(--primaryColor);
+            transition: 0.4s;
+
+            &:hover {
+                background: var(--secondaryColor);
+            }
+        }
+
+        .searchResults {
+            margin: 3%;
+
+            .searchResultsItem {
+                display: flex;
+                align-items: center;
+
+                .searchResultImage {
+                    background-color: #fff;
+                    width: 20%;
+                    margin-right: 3%;
+
+                    img {
+                        width: 100%;
+                        vertical-align: bottom;
+                    }
+                }
+
+                .searchImageContent {
+                    p {
+                        color: var(--textColor);
+                        transition: 0.4s;
+
+                        &:nth-child(1) {
+                            width: 412px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            margin-bottom: 2%;
+                        }
+
+                        &:nth-child(2) {
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                &:hover {
+                    p {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+        }
+
+        &.emptySearchItems {
+            height: 66px;
+
+            .searchResults {
+                margin: 4% 3% 4% 3%;
+            }
+
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: transparent;
+            }
+        }
+    }
+}

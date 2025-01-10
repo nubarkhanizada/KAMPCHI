@@ -1,0 +1,42 @@
+@import '../../styles/reset.scss';
+
+.notFoundPage {
+    margin: 9% 0%;
+
+    .notFoundImage {
+        width: 250px;
+        height: 287px;
+        margin: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        color: var(--textColor);
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+        margin: 0% 0% 1.5% 0%;
+    }
+
+    a {
+        color: var(--textColor);
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: 0.4s;
+
+        svg {
+            margin-right: 1%;
+        }
+
+        &:hover {
+            color: var(--primaryColor);
+        }
+    }
+}

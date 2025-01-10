@@ -1,0 +1,172 @@
+@import '../../styles/reset.scss';
+
+.aboutPage {
+    background-image: url(https://images.pexels.com/photos/3454270/pexels-photo-3454270.jpeg?cs=srgb&dl=pexels-michal-osinski-1863102-3454270.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 3% 0%;
+
+    h3 {
+        font-size: 25px;
+    }
+
+    .slogan {
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 40px;
+        }
+    }
+
+    .about {
+        margin: 3% 0%;
+
+        .aboutPart {
+            text-align: center;
+            padding: 5% 0%;
+            margin-bottom: 3%;
+            box-shadow: 0 0 5px #fff;
+            background-color: #ffffff1c;
+
+            p {
+                font-weight: 500;
+                padding: 0% 15%;
+                margin-top: 1%;
+            }
+        }
+
+        .vision {
+            margin-bottom: 0%;
+        }
+    }
+
+    .values {
+        text-align: center;
+        padding: 5% 0%;
+        margin-bottom: 3%;
+        box-shadow: 0 0 5px #fff;
+        background-color: #ffffff1c;
+
+        .valuesContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1%;
+
+            .valueContainer {
+                width: 20%;
+                padding: 1%;
+
+                .image {
+                    svg {
+                        vertical-align: bottom;
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+
+    .team {
+        text-align: center;
+        padding: 5% 0%;
+        margin-bottom: 3%;
+        box-shadow: 0 0 5px #fff;
+        background-color: #ffffff1c;
+
+        .teamContainer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1%;
+            padding: 0% 1%;
+
+            .member {
+                background-color: #ffffff1c;
+                width: 20%;
+                margin: 1%;
+                box-shadow: 0 0 5px #fff;
+
+                .image {
+                    margin: auto;
+
+                    img {
+                        width: 100%;
+                        height: 250px;
+                        object-fit: cover;
+                    }
+                }
+
+                p {
+                    font-size: 12px;
+                    font-weight: 600;
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+
+    .careers {
+        text-align: center;
+        padding: 5% 0% 6% 0%;
+        margin-bottom: 3%;
+        box-shadow: 0 0 5px #fff;
+        background-color: #ffffff1c;
+
+        h4 {
+            margin-top: 1%;
+        }
+
+        p {
+            font-weight: 500;
+            padding: 0% 15%;
+            margin-top: 1%;
+            margin-bottom: 2%;
+        }
+
+        a {
+            color: #fff;
+            border: 1px solid #fff;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 1%;
+            cursor: pointer;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: #ffffff1c;
+            }
+        }
+    }
+
+    .contact {
+        text-align: center;
+        padding: 5% 0%;
+        box-shadow: 0 0 5px #fff;
+        background-color: #ffffff1c;
+
+        h4 {
+            margin-top: 1%;
+        }
+
+        p {
+            font-weight: 500;
+            padding: 0% 15%;
+            margin-top: 1%;
+        }
+
+        a {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+}

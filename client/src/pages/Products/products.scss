@@ -1,0 +1,172 @@
+@import '../../styles/reset.scss';
+
+.productPage {
+
+    .aboutProductsSection {
+        background-image: url(https://wallpapercave.com/wp/wp13928291.jpg);
+        background-size: cover;
+        background-position: center;
+        padding: 5% 0%;
+        position: relative;
+
+        .aboutProductsContent {
+            background-color: #fff;
+            width: 50%;
+            padding: 6%;
+            position: relative;
+            z-index: 1;
+
+            h2 {
+                color: var(--textColor);
+                font-size: 35px;
+                font-weight: 500;
+                font-style: italic;
+            }
+
+            h4 {
+                color: var(--textColor);
+                font-size: 25px;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            h6 {
+                color: var(--textColor);
+                font-size: 16px;
+                margin-top: 3%;
+                font-weight: 400;
+            }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 493px;
+            background-color: var(--textColor);
+            opacity: 0.6;
+        }
+
+    }
+
+    .popularCategoriesSection {
+        padding: 3% 0%;
+        background-color: var(--borderColor);
+
+        h1 {
+            color: var(--textColor);
+            font-size: 25px;
+            margin-bottom: 3%;
+        }
+    }
+
+    .popularSellersSection {
+        padding: 3% 0%;
+
+        h1 {
+            color: var(--textColor);
+            font-size: 25px;
+            margin-bottom: 3%;
+        }
+
+        .popularSellersLogoContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .popularSellersLogo {
+                padding: 1%;
+                background-color: var(--borderColor);
+                cursor: default;
+                transition: 0.4s;
+
+                svg {
+                    fill: var(--textColor) !important;
+                    width: 160px;
+                    height: 38px;
+                    vertical-align: bottom;
+                    transition: 0.4s;
+                }
+
+                &:hover {
+                    background-color: var(--primaryColor);
+                }
+            }
+
+            .popularSellersLogo.yonja {
+                display: flex;
+                align-items: center;
+                font-size: 25px;
+                font-weight: 700;
+
+                svg {
+                    width: 28px;
+                }
+            }
+        }
+
+
+    }
+
+    .newArrivalsSection {
+        .newArrivalsContainer {
+            padding: 3% 0%;
+            border-top: 2px solid var(--borderColor);
+
+            h1 {
+                color: var(--textColor);
+                font-size: 25px;
+                margin-bottom: 3%;
+            }
+        }
+    }
+
+    .shoppingFeaturesSection {
+
+        .shoppingFeaturesContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 2px solid var(--borderColor);
+            padding: 3% 0%;
+
+            .shoppingFeatures {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .featuresIcon {
+                    svg {
+                        color: var(--textColor);
+                        fill: var(--textColor);
+                        width: 100px;
+                        height: 50px;
+                        vertical-align: bottom;
+                    }
+                }
+
+                .flexiblePayment {
+                    svg {
+                        height: 60px;
+                    }
+                }
+
+                .featuresContent {
+                    h4 {
+                        color: var(--textColor);
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-bottom: 5%;
+                    }
+
+                    p {
+                        color: var(--textColor);
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

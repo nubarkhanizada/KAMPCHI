@@ -1,0 +1,234 @@
+@import '../../styles/reset.scss';
+
+footer {
+    background-image: url(https://v4-upload.digoodcms.com/750/image_1685607865_2.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .footerAll {
+        .footerTop {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 5% 0%;
+
+            .vision {
+                width: 24%;
+
+                .logo {
+                    svg {
+                        color: #fff;
+                        fill: #fff;
+                        width: 105px;
+                        height: 25px;
+                        vertical-align: bottom;
+                        margin-bottom: 3%;
+                    }
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 15px;
+                    width: 345px;
+                }
+
+                .socialMedia {
+                    h6 {
+                        color: #fff;
+                        font-size: 20px;
+                        margin: 10% 0% 3% 0%;
+                    }
+
+                    a {
+                        svg {
+                            color: #fff;
+                            font-size: 28px;
+                            transition: 0.4s;
+                            margin-right: 3%;
+                        }
+
+                        &:hover svg {
+                            color: var(--primaryColor);
+                        }
+                    }
+                }
+            }
+
+            .contact {
+                width: 15%;
+                display: flex;
+                flex-direction: column;
+
+                h6 {
+                    color: #fff;
+                    font-size: 20px;
+                    margin-bottom: 5%;
+                }
+
+                a {
+                    color: #fff;
+                    font-size: 15px;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 3%;
+                    transition: 0.4s;
+
+                    svg {
+                        margin-right: 3%;
+                    }
+
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+
+            .links {
+                width: 6%;
+                display: flex;
+                flex-direction: column;
+
+                h6 {
+                    color: #fff;
+                    font-size: 20px;
+                    margin-bottom: 12%;
+                }
+
+                a {
+                    color: #fff;
+                    font-size: 15px;
+                    margin-bottom: 8%;
+                    transition: 0.4s;
+
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+
+            .support {
+                width: 13%;
+                display: flex;
+                flex-direction: column;
+
+                h6 {
+                    color: #fff;
+                    font-size: 20px;
+                    margin-bottom: 6%;
+                }
+
+                a {
+                    color: #fff;
+                    font-size: 15px;
+                    margin-bottom: 3%;
+                    transition: 0.4s;
+
+                    &:hover {
+                        color: var(--primaryColor);
+                    }
+                }
+            }
+
+            .newsletter {
+                width: 18%;
+
+                h6 {
+                    color: #fff;
+                    font-size: 20px;
+                    margin-bottom: 2%;
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 15px;
+                }
+
+                input {
+                    position: relative;
+                    color: #fff;
+                    background: transparent;
+                    font-size: 15px;
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                    width: 100%;
+                    padding: 3% 18% 3% 0%;
+                    margin-top: 10%;
+                    transition: 0.4s;
+
+                    &::placeholder {
+                        color: #fff;
+                    }
+
+                    &:focus::placeholder {
+                        color: var(--primaryColor);
+                    }
+
+                    &:focus {
+                        color: var(--primaryColor);
+                        border-bottom: 1px solid transparent;
+                        box-shadow: 0 0 5px var(--primaryColor);
+                    }
+                }
+
+                .invalid {
+                    border: 1px solid red;
+                }
+
+                button {
+                    position: absolute;
+                    right: 70px;
+                    background: transparent;
+                    outline: none;
+                    border: none;
+                    padding: 1% 0%;
+                    cursor: pointer;
+                    transition: 0.4s;
+
+                    &:hover {
+                        right: 60px;
+                    }
+
+                    svg {
+                        color: #fff;
+                        font-size: 35px;
+                        margin: 28% 0% 0% 42%;
+                    }
+                }
+
+                &:focus-within button svg {
+                    color: var(--primaryColor);
+                }
+
+                button.invalidButton svg {
+                    color: red;
+                }
+
+                .error {
+                    color: red;
+                    font-size: 12px;
+                    margin-top: 3%;
+                }
+            }
+        }
+
+        .footerBottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--borderColor);
+            padding: 1.5% 0%;
+
+            p {
+                color: #fff;
+                font-size: 15px;
+
+                span {
+                    font-size: 18px;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
